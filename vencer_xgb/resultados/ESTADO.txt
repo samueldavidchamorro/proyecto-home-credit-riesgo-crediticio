@@ -1,0 +1,28 @@
+2026-11-21 23:34:02  supervisor iniciado
+2026-11-21 23:34:02  compuerta newton: diseño 0.77897 disjunta 0.77327 pasa=False
+2026-11-21 23:34:02  compuerta hojas_lineales: diseño 0.77937 disjunta 0.77415 pasa=False
+2026-11-21 23:34:02  compuerta heterogeneo: diseño 0.77836 disjunta 0.77153 pasa=False
+2026-11-21 23:34:02  compuerta mvs: diseño 0.77812 disjunta 0.77387 pasa=False
+2026-11-21 23:34:02  compuerta olvidadizo: diseño 0.77822 disjunta 0.77658 pasa=False
+2026-11-21 23:34:02  compuerta: dart
+2026-11-21 23:55:23  compuerta dart: diseño 0.77404 disjunta 0.77245 pasa=False
+2026-11-21 23:55:23  compuerta: goss
+2026-11-22 00:14:34  compuerta goss: diseño 0.77750 disjunta 0.77348 pasa=False
+2026-11-22 00:14:34  pasan compuerta: [] | biblioteca sl: ['newton', 'hojas_lineales', 'heterogeneo', 'olvidadizo']
+2026-11-22 00:14:34  protocolo completo: newton
+2026-11-22 00:25:33  protocolo completo: hojas_lineales
+2026-11-22 00:45:17  protocolo completo: heterogeneo
+2026-11-22 01:03:07  protocolo completo: olvidadizo
+2026-11-22 02:01:53  PRUEBAS sl: OOF 0.78945 vs 0.78973 | prueba 0.79196 vs 0.79296 | p_holm DeLongOOF 0.1984 DeLongTest 0.0005 NB 0.0835 Wilcoxon 0.0098 -> NO SUPERA
+2026-11-22 02:01:53  sl no supera: segunda ronda (sl2 = #1 + #11)
+2026-11-22 02:01:53  protocolo completo: mvs
+2026-11-22 02:21:26  protocolo completo: dart
+2026-11-22 02:47:09  protocolo completo: goss
+2026-11-22 03:13:26  protocolo completo: newton_s1
+2026-11-22 03:24:27  protocolo completo: newton_s2
+2026-11-22 03:35:25  protocolo completo: hojas_lineales_s1
+2026-11-22 03:55:00  protocolo completo: hojas_lineales_s2
+2026-11-22 04:18:53  PRUEBAS sl: OOF 0.78945 vs 0.78973 | prueba 0.79196 vs 0.79296 | p_holm DeLongOOF 0.3174 DeLongTest 0.0006 NB 0.1314 Wilcoxon 0.0117 -> NO SUPERA
+2026-11-22 04:18:53  PRUEBAS sl2: OOF 0.78942 vs 0.78973 | prueba 0.79194 vs 0.79296 | p_holm DeLongOOF 0.3174 DeLongTest 0.0006 NB 0.1314 Wilcoxon 0.0117 -> NO SUPERA
+2026-11-22 04:18:53  BUSQUEDA TERMINADA: NINGUNO SUPERA (resultado negativo)
+2026-11-22 04:18:53  supervisor terminado

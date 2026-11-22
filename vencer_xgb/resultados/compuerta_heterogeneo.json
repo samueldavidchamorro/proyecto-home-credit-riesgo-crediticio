@@ -1,0 +1,23 @@
+{
+  "variante": "heterogeneo",
+  "params": {
+    "tasa": 0.021562524594482775,
+    "max_depth": 6,
+    "min_hess": 14.885029009221277,
+    "submuestra": 0.7661392236879497,
+    "colsample": 0.35071746712826635,
+    "lam": 15.305403581250896,
+    "alpha": 0.14487425326573353,
+    "gamma": 0.06079661535210829,
+    "peso_pos": 4.93586759744924,
+    "prof_min": 4
+  },
+  "it": 890,
+  "auc_diseno": 0.778360916028092,
+  "auc_disjunta": 0.7715267948783796,
+  "it_disjunta": 510,
+  "segundos": 945.6187841892242,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

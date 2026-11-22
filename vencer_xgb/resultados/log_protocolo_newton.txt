@@ -1,0 +1,11 @@
+[newton] rep 0 pliegue 0 auc 0.77872 t=68s
+[newton] rep 0 pliegue 1 auc 0.78721 t=136s
+[newton] rep 0 pliegue 2 auc 0.78943 t=203s
+[newton] rep 0 pliegue 3 auc 0.78395 t=270s
+[newton] rep 0 pliegue 4 auc 0.79509 t=338s
+[newton] rep 1 pliegue 0 auc 0.78651 t=401s
+[newton] rep 1 pliegue 1 auc 0.78499 t=465s
+[newton] rep 1 pliegue 2 auc 0.78810 t=528s
+[newton] rep 1 pliegue 3 auc 0.78667 t=592s
+[newton] rep 1 pliegue 4 auc 0.78803 t=655s
+[newton] OOF0 0.78684  prueba 0.79000  media pliegues 0.78687

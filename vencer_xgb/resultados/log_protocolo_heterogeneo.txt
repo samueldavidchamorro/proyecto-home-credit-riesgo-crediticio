@@ -1,0 +1,11 @@
+[heterogeneo] rep 0 pliegue 0 auc 0.78067 t=109s
+[heterogeneo] rep 0 pliegue 1 auc 0.78856 t=218s
+[heterogeneo] rep 0 pliegue 2 auc 0.79234 t=327s
+[heterogeneo] rep 0 pliegue 3 auc 0.78592 t=436s
+[heterogeneo] rep 0 pliegue 4 auc 0.79621 t=544s
+[heterogeneo] rep 1 pliegue 0 auc 0.78951 t=649s
+[heterogeneo] rep 1 pliegue 1 auc 0.78677 t=753s
+[heterogeneo] rep 1 pliegue 2 auc 0.78824 t=857s
+[heterogeneo] rep 1 pliegue 3 auc 0.78926 t=962s
+[heterogeneo] rep 1 pliegue 4 auc 0.79003 t=1066s
+[heterogeneo] OOF0 0.78869  prueba 0.79210  media pliegues 0.78875

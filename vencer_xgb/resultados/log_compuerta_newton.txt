@@ -1,0 +1,21 @@
+[newton] trial 0 auc 0.77258 it 360 t=64s
+[newton] trial 1 auc 0.77228 it 350 t=155s
+[newton] trial 2 auc 0.77304 it 220 t=226s
+[newton] trial 3 auc 0.76881 it 150 t=252s
+[newton] trial 4 auc 0.77429 it 350 t=289s
+[newton] trial 5 auc 0.77520 it 500 t=314s
+[newton] trial 6 auc 0.77805 it 1700 t=372s
+[newton] trial 7 auc 0.77669 it 1410 t=424s
+[newton] trial 8 auc 0.76949 it 90 t=436s
+[newton] trial 9 auc 0.77704 it 1070 t=471s
+[newton] trial 10 auc 0.77492 it 1140 t=500s
+[newton] trial 11 auc 0.77757 it 870 t=531s
+[newton] trial 12 auc 0.77698 it 1560 t=585s
+[newton] trial 13 auc 0.77788 it 1860 t=627s
+[newton] trial 14 auc 0.77670 it 1170 t=680s
+[newton] trial 15 auc 0.77764 it 2110 t=735s
+[newton] trial 16 auc 0.77592 it 820 t=763s
+[newton] trial 17 auc 0.77897 it 890 t=791s
+[newton] trial 18 auc 0.77777 it 1650 t=833s
+[newton] trial 19 auc 0.77762 it 1240 t=883s
+{'variante': 'newton', 'params': {'tasa': 0.021654280157198592, 'max_depth': 4, 'min_hess': 10.792712969250042, 'submuestra': 0.5325998461639199, 'colsample': 0.2939377076756073, 'lam': 0.03842546539090055, 'alpha': 0.0026051930219310225, 'gamma': 0.02370316326792805, 'peso_pos': 2.478043045731722}, 'it': 890, 'auc_diseno': 0.7789658815446365, 'auc_disjunta': 0.7732747010746241, 'it_disjunta': 900, 'segundos': 915.515373468399, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

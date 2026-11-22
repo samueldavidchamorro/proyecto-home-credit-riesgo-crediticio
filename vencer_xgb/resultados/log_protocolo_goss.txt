@@ -1,0 +1,11 @@
+[goss] rep 0 pliegue 0 auc 0.78019 t=160s
+[goss] rep 0 pliegue 1 auc 0.78792 t=321s
+[goss] rep 0 pliegue 2 auc 0.79079 t=481s
+[goss] rep 0 pliegue 3 auc 0.78455 t=642s
+[goss] rep 0 pliegue 4 auc 0.79568 t=802s
+[goss] rep 1 pliegue 0 auc 0.78822 t=956s
+[goss] rep 1 pliegue 1 auc 0.78661 t=1111s
+[goss] rep 1 pliegue 2 auc 0.78793 t=1265s
+[goss] rep 1 pliegue 3 auc 0.78771 t=1420s
+[goss] rep 1 pliegue 4 auc 0.78927 t=1574s
+[goss] OOF0 0.78779  prueba 0.79062  media pliegues 0.78789

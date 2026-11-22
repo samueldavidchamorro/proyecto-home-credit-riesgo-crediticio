@@ -1,0 +1,21 @@
+[olvidadizo] trial 0 auc 0.77491 it 1120 t=73s
+[olvidadizo] trial 1 auc 0.77642 it 1490 t=241s
+[olvidadizo] trial 2 auc 0.77582 it 910 t=294s
+[olvidadizo] trial 3 auc 0.77188 it 320 t=328s
+[olvidadizo] trial 4 auc 0.77502 it 1130 t=391s
+[olvidadizo] trial 5 auc 0.77477 it 1040 t=428s
+[olvidadizo] trial 6 auc 0.77476 it 2170 t=497s
+[olvidadizo] trial 7 auc 0.77617 it 3990 t=626s
+[olvidadizo] trial 8 auc 0.77261 it 330 t=643s
+[olvidadizo] trial 9 auc 0.77572 it 1970 t=704s
+[olvidadizo] trial 10 auc 0.77605 it 760 t=769s
+[olvidadizo] trial 11 auc 0.77585 it 2740 t=895s
+[olvidadizo] trial 12 auc 0.77648 it 1940 t=1095s
+[olvidadizo] trial 13 auc 0.77645 it 1470 t=1304s
+[olvidadizo] trial 14 auc 0.77822 it 1710 t=1454s
+[olvidadizo] trial 15 auc 0.77608 it 2860 t=1757s
+[olvidadizo] trial 16 auc 0.77419 it 960 t=1825s
+[olvidadizo] trial 17 auc 0.77711 it 1190 t=1991s
+[olvidadizo] trial 18 auc 0.77684 it 1090 t=2103s
+[olvidadizo] trial 19 auc 0.77581 it 1900 t=2232s
+{'variante': 'olvidadizo', 'params': {'tasa': 0.02693017898435638, 'max_depth': 8, 'min_hess': 6.698757225602109, 'submuestra': 0.8725845118464232, 'colsample': 0.5264044561838056, 'lam': 0.07654928004692764, 'alpha': 0.0011395676740012849, 'gamma': 0.0033356524190749884, 'peso_pos': 3.0480237760151443, 'olvidadizo': True}, 'it': 1710, 'auc_diseno': 0.778218173425132, 'auc_disjunta': 0.776582224791209, 'it_disjunta': 1680, 'segundos': 2365.2650587558746, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

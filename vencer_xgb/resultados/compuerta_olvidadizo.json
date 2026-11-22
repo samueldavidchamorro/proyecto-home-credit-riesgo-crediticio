@@ -1,0 +1,23 @@
+{
+  "variante": "olvidadizo",
+  "params": {
+    "tasa": 0.02693017898435638,
+    "max_depth": 8,
+    "min_hess": 6.698757225602109,
+    "submuestra": 0.8725845118464232,
+    "colsample": 0.5264044561838056,
+    "lam": 0.07654928004692764,
+    "alpha": 0.0011395676740012849,
+    "gamma": 0.0033356524190749884,
+    "peso_pos": 3.0480237760151443,
+    "olvidadizo": true
+  },
+  "it": 1710,
+  "auc_diseno": 0.778218173425132,
+  "auc_disjunta": 0.776582224791209,
+  "it_disjunta": 1680,
+  "segundos": 2365.2650587558746,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

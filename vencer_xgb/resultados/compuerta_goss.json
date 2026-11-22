@@ -1,0 +1,23 @@
+{
+  "variante": "goss",
+  "params": {
+    "tasa": 0.013746209273114545,
+    "max_depth": 4,
+    "min_hess": 5.463240777949554,
+    "submuestra": 0.9104966149239675,
+    "colsample": 0.27768102063444905,
+    "lam": 22.479136784899822,
+    "alpha": 0.002423224390060893,
+    "gamma": 4.09161037845142,
+    "peso_pos": 2.8746048065908063,
+    "muestreo": "goss"
+  },
+  "it": 1800,
+  "auc_diseno": 0.7775033289943091,
+  "auc_disjunta": 0.7734769614228183,
+  "it_disjunta": 1240,
+  "segundos": 1141.5549442768097,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

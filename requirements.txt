@@ -1,0 +1,15 @@
+# Python 3.12. Versiones con las que se ejecutó el proyecto.
+numpy==2.5.3
+scipy==1.18.1
+pandas==2.3.3
+pyarrow==25.0.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+optuna==5.0.0
+xgboost==3.4.1          # solo como referencia de comparación (no es núcleo de ningún modelo propio)
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel==7.4.0
+# GPU (opcional; sin ella el motor propio corre en NumPy, más lento):
+# cupy-cuda12x==14.2.0

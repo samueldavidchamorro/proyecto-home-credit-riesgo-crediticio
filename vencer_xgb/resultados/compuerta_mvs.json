@@ -1,0 +1,23 @@
+{
+  "variante": "mvs",
+  "params": {
+    "tasa": 0.018986302323388014,
+    "max_depth": 4,
+    "min_hess": 2.9289235177351887,
+    "submuestra": 0.7155357742142598,
+    "colsample": 0.3158552685739046,
+    "lam": 14.343418169666336,
+    "alpha": 0.007989519239399051,
+    "gamma": 0.5400528909486512,
+    "peso_pos": 4.6804701459565425,
+    "muestreo": "mvs"
+  },
+  "it": 1360,
+  "auc_diseno": 0.778115451375002,
+  "auc_disjunta": 0.7738667210869004,
+  "it_disjunta": 1190,
+  "segundos": 1289.0645627975464,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

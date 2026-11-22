@@ -1,4 +1,24 @@
-# JupyterRiesgoCrediticio
+# Proyecto Home Credit Default Risk: riesgo crediticio y modelo original ELAR-R
+
+**Equipo:** Jacobo Londoño, Samuel Chamorro y Jesús David Barrios Valdés.
+
+- **Cuaderno único (todo el proyecto, con salidas):** [`Proyecto_Home_Credit_completo.ipynb`](Proyecto_Home_Credit_completo.ipynb)
+- **Página web (GitHub Pages):** https://samueldavidchamorro.github.io/proyecto-home-credit-riesgo-crediticio/
+- **Cómo añadir una sección y volver a publicar:** [`INSTRUCCIONES_GITHUB.md`](INSTRUCCIONES_GITHUB.md)
+
+El cuaderno único se arma con `python construir_cuaderno.py` a partir del orden de `orden_cuaderno.json`:
+Parte I (Entregable 4), Parte II (intento de superar a XGBoost con los algoritmos del Top 30, carpeta `vencer_xgb/`)
+y Anexo (Entregable 3).
+
+## Parte II: intento de superar a XGBoost (`vencer_xgb/`)
+
+Siete variantes de un boosting de Newton propio (NumPy/CuPy) y dos Super Learners, con protocolo prerregistrado
+(`vencer_xgb/PROTOCOLO.md`). Resultado: **ninguno supera a XGBoost con significancia**. El mejor, el Super Learner,
+queda en 0.78945 de AUC fuera de pliegue frente a 0.78973 de XGBoost, y en 0.79196 frente a 0.79296 en prueba.
+
+---
+
+## Cuadernos fuente
 
 Archivos fuente de la implementación (`.ipynb`) **ya ejecutados**, con todas las salidas y figuras visibles.
 Son copias idénticas de los cuadernos de la raíz del repositorio, en el orden del libro (`_toc.yml`).

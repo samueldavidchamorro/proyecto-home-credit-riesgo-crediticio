@@ -1,0 +1,21 @@
+trial 0 auc 0.77050 it 192
+trial 1 auc 0.77641 it 485
+trial 2 auc 0.77538 it 163
+trial 3 auc 0.76959 it 151
+trial 4 auc 0.77668 it 314
+trial 5 auc 0.77533 it 296
+trial 6 auc 0.77793 it 1552
+trial 7 auc 0.77852 it 1754
+trial 8 auc 0.76964 it 137
+trial 9 auc 0.77742 it 1314
+trial 10 auc 0.77626 it 1272
+trial 11 auc 0.77589 it 1960
+trial 12 auc 0.77680 it 1256
+trial 13 auc 0.77768 it 1550
+trial 14 auc 0.77906 it 2217
+trial 15 auc 0.77895 it 1161
+trial 16 auc 0.77779 it 1211
+trial 17 auc 0.77721 it 936
+trial 18 auc 0.77953 it 1873
+trial 19 auc 0.77834 it 2295
+{'params': {'eta': 0.01272030575564315, 'max_depth': 5, 'min_child_weight': 35.61689797980424, 'subsample': 0.8221387635177433, 'colsample_bytree': 0.27995841518949244, 'reg_lambda': 8.487380441648613, 'reg_alpha': 0.0468822075027971, 'gamma': 0.08081064420154684, 'scale_pos_weight': 2.9174455687146015}, 'it': 1873, 'auc_diseno': 0.7795273533242792, 'auc_disjunta': 0.7745280205966131, 'it_disjunta': 1119, 'segundos': 459.4571809768677}

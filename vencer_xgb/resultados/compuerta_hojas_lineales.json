@@ -1,0 +1,24 @@
+{
+  "variante": "hojas_lineales",
+  "params": {
+    "tasa": 0.013824543364519932,
+    "max_depth": 3,
+    "min_hess": 3.9361391812671283,
+    "submuestra": 0.5984049602253477,
+    "colsample": 0.329805221544358,
+    "lam": 9.006022855044222,
+    "alpha": 2.600416724559029,
+    "gamma": 0.0032479169109023284,
+    "peso_pos": 4.895415218035657,
+    "lam_lin": 236.41919709267768,
+    "hojas_lineales": true
+  },
+  "it": 1790,
+  "auc_diseno": 0.7793726124490705,
+  "auc_disjunta": 0.7741493645967612,
+  "it_disjunta": 1550,
+  "segundos": 861.0148403644562,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

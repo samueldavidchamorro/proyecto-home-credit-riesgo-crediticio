@@ -1,0 +1,11 @@
+[xgb] rep 0 pliegue 0 auc 0.78163 t=72s
+[xgb] rep 0 pliegue 1 auc 0.79015 t=135s
+[xgb] rep 0 pliegue 2 auc 0.79289 t=194s
+[xgb] rep 0 pliegue 3 auc 0.78705 t=253s
+[xgb] rep 0 pliegue 4 auc 0.79708 t=311s
+[xgb] rep 1 pliegue 0 auc 0.79054 t=367s
+[xgb] rep 1 pliegue 1 auc 0.78859 t=423s
+[xgb] rep 1 pliegue 2 auc 0.79079 t=482s
+[xgb] rep 1 pliegue 3 auc 0.79015 t=542s
+[xgb] rep 1 pliegue 4 auc 0.79156 t=600s
+[xgb] OOF0 0.78973  prueba 0.79296  media pliegues 0.79004

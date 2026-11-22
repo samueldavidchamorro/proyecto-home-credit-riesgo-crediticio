@@ -1,0 +1,11 @@
+[dart] rep 0 pliegue 0 auc 0.77361 t=156s
+[dart] rep 0 pliegue 1 auc 0.78209 t=312s
+[dart] rep 0 pliegue 2 auc 0.78359 t=468s
+[dart] rep 0 pliegue 3 auc 0.77937 t=624s
+[dart] rep 0 pliegue 4 auc 0.78919 t=779s
+[dart] rep 1 pliegue 0 auc 0.78094 t=931s
+[dart] rep 1 pliegue 1 auc 0.78103 t=1083s
+[dart] rep 1 pliegue 2 auc 0.78277 t=1236s
+[dart] rep 1 pliegue 3 auc 0.78104 t=1387s
+[dart] rep 1 pliegue 4 auc 0.78310 t=1539s
+[dart] OOF0 0.78154  prueba 0.78284  media pliegues 0.78167

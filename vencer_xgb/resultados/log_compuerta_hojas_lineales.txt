@@ -1,0 +1,21 @@
+[hojas_lineales] trial 0 auc 0.77331 it 270 t=51s
+[hojas_lineales] trial 1 auc 0.77405 it 220 t=70s
+[hojas_lineales] trial 2 auc 0.76712 it 130 t=88s
+[hojas_lineales] trial 3 auc 0.77402 it 620 t=136s
+[hojas_lineales] trial 4 auc 0.77633 it 530 t=178s
+[hojas_lineales] trial 5 auc 0.77601 it 420 t=202s
+[hojas_lineales] trial 6 auc 0.77753 it 1450 t=244s
+[hojas_lineales] trial 7 auc 0.77409 it 100 t=261s
+[hojas_lineales] trial 8 auc 0.77713 it 700 t=321s
+[hojas_lineales] trial 9 auc 0.77245 it 430 t=376s
+[hojas_lineales] trial 10 auc 0.77769 it 1650 t=420s
+[hojas_lineales] trial 11 auc 0.77732 it 1800 t=471s
+[hojas_lineales] trial 12 auc 0.77844 it 1450 t=507s
+[hojas_lineales] trial 13 auc 0.77754 it 2210 t=562s
+[hojas_lineales] trial 14 auc 0.77937 it 1790 t=610s
+[hojas_lineales] trial 15 auc 0.77711 it 950 t=641s
+[hojas_lineales] trial 16 auc 0.77771 it 1200 t=682s
+[hojas_lineales] trial 17 auc 0.77685 it 1750 t=724s
+[hojas_lineales] trial 18 auc 0.77791 it 1560 t=781s
+[hojas_lineales] trial 19 auc 0.77841 it 1120 t=814s
+{'variante': 'hojas_lineales', 'params': {'tasa': 0.013824543364519932, 'max_depth': 3, 'min_hess': 3.9361391812671283, 'submuestra': 0.5984049602253477, 'colsample': 0.329805221544358, 'lam': 9.006022855044222, 'alpha': 2.600416724559029, 'gamma': 0.0032479169109023284, 'peso_pos': 4.895415218035657, 'lam_lin': 236.41919709267768, 'hojas_lineales': True}, 'it': 1790, 'auc_diseno': 0.7793726124490705, 'auc_disjunta': 0.7741493645967612, 'it_disjunta': 1550, 'segundos': 861.0148403644562, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

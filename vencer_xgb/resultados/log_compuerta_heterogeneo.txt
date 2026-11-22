@@ -1,0 +1,21 @@
+[heterogeneo] trial 0 auc 0.77468 it 380 t=37s
+[heterogeneo] trial 1 auc 0.77601 it 250 t=52s
+[heterogeneo] trial 2 auc 0.76651 it 150 t=64s
+[heterogeneo] trial 3 auc 0.77619 it 800 t=104s
+[heterogeneo] trial 4 auc 0.77603 it 770 t=145s
+[heterogeneo] trial 5 auc 0.77553 it 610 t=165s
+[heterogeneo] trial 6 auc 0.77609 it 2000 t=207s
+[heterogeneo] trial 7 auc 0.77570 it 220 t=225s
+[heterogeneo] trial 8 auc 0.77683 it 960 t=290s
+[heterogeneo] trial 9 auc 0.77514 it 780 t=337s
+[heterogeneo] trial 10 auc 0.77517 it 900 t=380s
+[heterogeneo] trial 11 auc 0.77836 it 890 t=426s
+[heterogeneo] trial 12 auc 0.77734 it 1630 t=523s
+[heterogeneo] trial 13 auc 0.77597 it 1030 t=599s
+[heterogeneo] trial 14 auc 0.77466 it 900 t=682s
+[heterogeneo] trial 15 auc 0.77819 it 960 t=724s
+[heterogeneo] trial 16 auc 0.77466 it 660 t=758s
+[heterogeneo] trial 17 auc 0.77777 it 810 t=798s
+[heterogeneo] trial 18 auc 0.77715 it 1080 t=857s
+[heterogeneo] trial 19 auc 0.77619 it 810 t=911s
+{'variante': 'heterogeneo', 'params': {'tasa': 0.021562524594482775, 'max_depth': 6, 'min_hess': 14.885029009221277, 'submuestra': 0.7661392236879497, 'colsample': 0.35071746712826635, 'lam': 15.305403581250896, 'alpha': 0.14487425326573353, 'gamma': 0.06079661535210829, 'peso_pos': 4.93586759744924, 'prof_min': 4}, 'it': 890, 'auc_diseno': 0.778360916028092, 'auc_disjunta': 0.7715267948783796, 'it_disjunta': 510, 'segundos': 945.6187841892242, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

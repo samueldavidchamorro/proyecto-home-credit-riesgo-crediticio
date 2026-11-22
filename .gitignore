@@ -1,0 +1,8 @@
+# Datos crudos (3.4 GB): vienen en el .zip, no en GitHub
+datos/
+datos_hc/
+# Matriz de variables (930 MB): se regenera con vencer_xgb/features.py
+vencer_xgb/cache/X.npy
+__pycache__/
+.ipynb_checkpoints/
+ENTREGA_INFO.json

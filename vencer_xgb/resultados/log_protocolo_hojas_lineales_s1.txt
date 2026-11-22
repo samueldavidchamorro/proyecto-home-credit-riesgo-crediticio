@@ -1,0 +1,11 @@
+[hojas_lineales_s1] rep 0 pliegue 0 auc 0.77941 t=121s
+[hojas_lineales_s1] rep 0 pliegue 1 auc 0.78816 t=241s
+[hojas_lineales_s1] rep 0 pliegue 2 auc 0.79063 t=361s
+[hojas_lineales_s1] rep 0 pliegue 3 auc 0.78482 t=480s
+[hojas_lineales_s1] rep 0 pliegue 4 auc 0.79617 t=601s
+[hojas_lineales_s1] rep 1 pliegue 0 auc 0.78771 t=715s
+[hojas_lineales_s1] rep 1 pliegue 1 auc 0.78678 t=829s
+[hojas_lineales_s1] rep 1 pliegue 2 auc 0.78871 t=943s
+[hojas_lineales_s1] rep 1 pliegue 3 auc 0.78757 t=1057s
+[hojas_lineales_s1] rep 1 pliegue 4 auc 0.78927 t=1172s
+[hojas_lineales_s1] OOF0 0.78780  prueba 0.78993  media pliegues 0.78792

@@ -1,0 +1,11 @@
+[olvidadizo] rep 0 pliegue 0 auc 0.78032 t=347s
+[olvidadizo] rep 0 pliegue 1 auc 0.78857 t=692s
+[olvidadizo] rep 0 pliegue 2 auc 0.79073 t=1043s
+[olvidadizo] rep 0 pliegue 3 auc 0.78533 t=1386s
+[olvidadizo] rep 0 pliegue 4 auc 0.79672 t=1734s
+[olvidadizo] rep 1 pliegue 0 auc 0.78780 t=2073s
+[olvidadizo] rep 1 pliegue 1 auc 0.78664 t=2412s
+[olvidadizo] rep 1 pliegue 2 auc 0.78862 t=2749s
+[olvidadizo] rep 1 pliegue 3 auc 0.78870 t=3089s
+[olvidadizo] rep 1 pliegue 4 auc 0.79023 t=3428s
+[olvidadizo] OOF0 0.78829  prueba 0.79069  media pliegues 0.78837
