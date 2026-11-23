@@ -1,0 +1,27 @@
+{
+  "variante": "ktboost",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.033254339154005844,
+    "max_depth": 5,
+    "min_hess": 3.3815142678202905,
+    "submuestra": 0.8871168447171083,
+    "colsample": 0.5649202657732388,
+    "lam": 1.8781738757161923,
+    "alpha": 0.001188937983177301,
+    "gamma": 0.19258177148599517,
+    "peso_pos": 3.4483828908896856,
+    "nucleo_D": 128,
+    "nucleo_ls": 14.679138450126358,
+    "nucleo_lam": 20.468963963126665
+  },
+  "it": 490,
+  "auc_diseno": 0.7779616840438135,
+  "auc_disjunta": 0.7732104997932929,
+  "it_disjunta": 380,
+  "segundos": 1012.8523123264313,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

@@ -1,0 +1,25 @@
+{
+  "variante": "nesterov",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.010521226116490267,
+    "max_depth": 7,
+    "min_hess": 4.274781785387868,
+    "submuestra": 0.8610474541539496,
+    "colsample": 0.22453539918704216,
+    "lam": 76.79533747805968,
+    "alpha": 0.02283645900734465,
+    "gamma": 0.12141726420096642,
+    "peso_pos": 1.9124994422157546,
+    "paso": "nesterov"
+  },
+  "it": 80,
+  "auc_diseno": 0.7688541534229597,
+  "auc_disjunta": 0.762875724842991,
+  "it_disjunta": 70,
+  "segundos": 222.90343642234802,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

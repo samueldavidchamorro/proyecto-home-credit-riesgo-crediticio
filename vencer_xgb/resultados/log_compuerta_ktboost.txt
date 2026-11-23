@@ -1,0 +1,21 @@
+[ktboost] trial 0 auc 0.77259 it 350 t=63s
+[ktboost] trial 1 auc 0.77584 it 2610 t=203s
+[ktboost] trial 2 auc 0.77796 it 490 t=242s
+[ktboost] trial 3 auc 0.77491 it 760 t=268s
+[ktboost] trial 4 auc 0.77693 it 330 t=281s
+[ktboost] trial 5 auc 0.77164 it 150 t=303s
+[ktboost] trial 6 auc 0.77455 it 350 t=323s
+[ktboost] trial 7 auc 0.77564 it 440 t=346s
+[ktboost] trial 8 auc 0.77691 it 340 t=373s
+[ktboost] trial 9 auc 0.77709 it 1580 t=459s
+[ktboost] trial 10 auc 0.77327 it 420 t=506s
+[ktboost] trial 11 auc 0.77706 it 760 t=549s
+[ktboost] trial 12 auc 0.77614 it 3280 t=658s
+[ktboost] trial 13 auc 0.77408 it 200 t=678s
+[ktboost] trial 14 auc 0.77525 it 440 t=731s
+[ktboost] trial 15 auc 0.77656 it 1410 t=780s
+[ktboost] trial 16 auc 0.77424 it 320 t=808s
+[ktboost] trial 17 auc 0.77619 it 2100 t=893s
+[ktboost] trial 18 auc 0.77539 it 720 t=942s
+[ktboost] trial 19 auc 0.77508 it 470 t=975s
+{'variante': 'ktboost', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.033254339154005844, 'max_depth': 5, 'min_hess': 3.3815142678202905, 'submuestra': 0.8871168447171083, 'colsample': 0.5649202657732388, 'lam': 1.8781738757161923, 'alpha': 0.001188937983177301, 'gamma': 0.19258177148599517, 'peso_pos': 3.4483828908896856, 'nucleo_D': 128, 'nucleo_ls': 14.679138450126358, 'nucleo_lam': 20.468963963126665}, 'it': 490, 'auc_diseno': 0.7779616840438135, 'auc_disjunta': 0.7732104997932929, 'it_disjunta': 380, 'segundos': 1012.8523123264313, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

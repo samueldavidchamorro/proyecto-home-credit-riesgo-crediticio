@@ -1,0 +1,19 @@
+{
+  "variante": "psplines",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.16829601216054646,
+    "K": 9,
+    "lam": 34.35533046490633,
+    "submuestra": 0.7039792011338231
+  },
+  "it": 680,
+  "auc_diseno": 0.7749218323087791,
+  "auc_disjunta": 0.7726631312459427,
+  "it_disjunta": 680,
+  "segundos": 247.970134973526,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

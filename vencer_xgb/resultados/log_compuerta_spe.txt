@@ -1,0 +1,21 @@
+[spe] trial 0 auc 0.77451 it None t=160s
+[spe] trial 1 auc 0.77533 it None t=543s
+[spe] trial 2 auc 0.76547 it None t=751s
+[spe] trial 3 auc 0.77146 it None t=779s
+[spe] trial 4 auc 0.76977 it None t=852s
+[spe] trial 5 auc 0.77242 it None t=1064s
+[spe] trial 6 auc 0.77416 it None t=1216s
+[spe] trial 7 auc 0.76588 it None t=1275s
+[spe] trial 8 auc 0.77050 it None t=1466s
+[spe] trial 9 auc 0.77094 it None t=1640s
+[spe] trial 10 auc 0.77299 it None t=1960s
+[spe] trial 11 auc 0.77360 it None t=2306s
+[spe] trial 12 auc 0.77516 it None t=2494s
+[spe] trial 13 auc 0.77693 it None t=2952s
+[spe] trial 14 auc 0.77513 it None t=3333s
+[spe] trial 15 auc 0.77617 it None t=3776s
+[spe] trial 16 auc 0.77589 it None t=4061s
+[spe] trial 17 auc 0.77724 it None t=4699s
+[spe] trial 18 auc 0.77600 it None t=5529s
+[spe] trial 19 auc 0.77159 it None t=5751s
+{'variante': 'spe', 'familia': 'general', 'tipo_it': None, 'params': {'n_est': 16, 'k_cubetas': 14, 'n_r': 513, 'tasa': 0.045073058965078336, 'max_depth': 6, 'colsample': 0.9756226125722248, 'lam': 0.11548588368694952, 'min_hess': 1.0020026871286347}, 'it': None, 'auc_diseno': 0.777238761828823, 'auc_disjunta': 0.7707575898544294, 'it_disjunta': None, 'segundos': 6455.321024894714, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

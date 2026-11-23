@@ -1,0 +1,21 @@
+[ngboost] trial 0 auc 0.75337 it 160 t=38s
+[ngboost] trial 1 auc 0.75877 it 160 t=87s
+[ngboost] trial 2 auc 0.74118 it 80 t=123s
+[ngboost] trial 3 auc 0.74920 it 100 t=143s
+[ngboost] trial 4 auc 0.75201 it 200 t=167s
+[ngboost] trial 5 auc 0.75745 it 180 t=178s
+[ngboost] trial 6 auc 0.77295 it 360 t=194s
+[ngboost] trial 7 auc 0.77058 it 270 t=209s
+[ngboost] trial 8 auc 0.73326 it 90 t=222s
+[ngboost] trial 9 auc 0.76957 it 330 t=235s
+[ngboost] trial 10 auc 0.76843 it 230 t=243s
+[ngboost] trial 11 auc 0.76678 it 290 t=265s
+[ngboost] trial 12 auc 0.76580 it 330 t=280s
+[ngboost] trial 13 auc 0.77031 it 370 t=300s
+[ngboost] trial 14 auc 0.77190 it 280 t=316s
+[ngboost] trial 15 auc 0.76789 it 470 t=340s
+[ngboost] trial 16 auc 0.76844 it 200 t=353s
+[ngboost] trial 17 auc 0.77126 it 340 t=378s
+[ngboost] trial 18 auc 0.76832 it 340 t=399s
+[ngboost] trial 19 auc 0.77090 it 480 t=421s
+{'variante': 'ngboost', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.01617620924717979, 'max_depth': 3, 'min_hess': 20.240286281332825, 'submuestra': 0.626645801269891, 'colsample': 0.573048618285045, 'lam': 0.09499535455183801, 'alpha': 0.004323926814280047, 'gamma': 0.002560202612394475, 'peso_pos': 3.6253183578610937, 'perdida': 'natural'}, 'it': 360, 'auc_diseno': 0.7729512739639176, 'auc_disjunta': 0.765207704827347, 'it_disjunta': 170, 'segundos': 435.3136262893677, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

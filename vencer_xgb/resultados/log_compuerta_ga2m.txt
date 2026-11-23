@@ -1,0 +1,21 @@
+[ga2m] trial 0 auc 0.74150 it 1040 t=24s
+[ga2m] trial 1 auc 0.75624 it 1860 t=57s
+[ga2m] trial 2 auc 0.74270 it 1300 t=76s
+[ga2m] trial 3 auc 0.74388 it 420 t=87s
+[ga2m] trial 4 auc 0.69776 it 520 t=93s
+[ga2m] trial 5 auc 0.69860 it 880 t=100s
+[ga2m] trial 6 auc 0.76236 it 1500 t=121s
+[ga2m] trial 7 auc 0.74791 it 1390 t=150s
+[ga2m] trial 8 auc 0.75370 it 1420 t=169s
+[ga2m] trial 9 auc 0.72634 it 1470 t=192s
+[ga2m] trial 10 auc 0.76283 it 1690 t=216s
+[ga2m] trial 11 auc 0.75582 it 1040 t=233s
+[ga2m] trial 12 auc 0.76601 it 2470 t=266s
+[ga2m] trial 13 auc 0.76327 it 2660 t=313s
+[ga2m] trial 14 auc 0.76407 it 1710 t=342s
+[ga2m] trial 15 auc 0.76268 it 1890 t=376s
+[ga2m] trial 16 auc 0.76332 it 2180 t=416s
+[ga2m] trial 17 auc 0.75940 it 1310 t=442s
+[ga2m] trial 18 auc 0.76381 it 2850 t=493s
+[ga2m] trial 19 auc 0.76382 it 2870 t=542s
+{'variante': 'ga2m', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.08275147215273751, 'max_depth': 2, 'min_hess': 74.9195941431987, 'submuestra': 0.6190807925339726, 'colsample': 1.0, 'lam': 1.1999528445240044, 'alpha': 0.21399565815301264, 'gamma': 0.0013743832865816404, 'peso_pos': 2.2280086624830804, 'una_variable': True, 'pares_ga2m': 7, 'rondas_main': 2403}, 'it': 2470, 'auc_diseno': 0.766008826307959, 'auc_disjunta': 0.7659659377470697, 'it_disjunta': 2660, 'segundos': 580.2028732299805, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

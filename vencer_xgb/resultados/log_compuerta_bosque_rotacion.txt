@@ -1,0 +1,21 @@
+[bosque_rotacion] trial 0 auc 0.74427 it None t=45s
+[bosque_rotacion] trial 1 auc 0.74646 it None t=86s
+[bosque_rotacion] trial 2 auc 0.73623 it None t=122s
+[bosque_rotacion] trial 3 auc 0.74316 it None t=193s
+[bosque_rotacion] trial 4 auc 0.73591 it None t=217s
+[bosque_rotacion] trial 5 auc 0.73933 it None t=240s
+[bosque_rotacion] trial 6 auc 0.74125 it None t=286s
+[bosque_rotacion] trial 7 auc 0.74114 it None t=332s
+[bosque_rotacion] trial 8 auc 0.74344 it None t=362s
+[bosque_rotacion] trial 9 auc 0.73913 it None t=383s
+[bosque_rotacion] trial 10 auc 0.74339 it None t=425s
+[bosque_rotacion] trial 11 auc 0.73884 it None t=452s
+[bosque_rotacion] trial 12 auc 0.74621 it None t=484s
+[bosque_rotacion] trial 13 auc 0.74494 it None t=508s
+[bosque_rotacion] trial 14 auc 0.74569 it None t=553s
+[bosque_rotacion] trial 15 auc 0.74128 it None t=582s
+[bosque_rotacion] trial 16 auc 0.74853 it None t=624s
+[bosque_rotacion] trial 17 auc 0.74413 it None t=676s
+[bosque_rotacion] trial 18 auc 0.74606 it None t=709s
+[bosque_rotacion] trial 19 auc 0.74647 it None t=750s
+{'variante': 'bosque_rotacion', 'familia': 'general', 'tipo_it': None, 'params': {'n_arboles': 45, 'prof': 10, 'col_arbol': 0.4727696921635992, 'col_nodo': 0.5312328008132141, 'min_hoja': 114.8426013358074, 'rot_k': 8}, 'it': None, 'auc_diseno': 0.7485347636256169, 'auc_disjunta': 0.7421307121248224, 'it_disjunta': None, 'segundos': 797.8145380020142, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

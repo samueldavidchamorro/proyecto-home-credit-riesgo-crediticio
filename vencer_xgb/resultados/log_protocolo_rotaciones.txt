@@ -1,0 +1,11 @@
+[rotaciones] rep 0 pliegue 0 auc 0.78082 t=133s
+[rotaciones] rep 0 pliegue 1 auc 0.78847 t=260s
+[rotaciones] rep 0 pliegue 2 auc 0.79206 t=389s
+[rotaciones] rep 0 pliegue 3 auc 0.78626 t=517s
+[rotaciones] rep 0 pliegue 4 auc 0.79768 t=646s
+[rotaciones] rep 1 pliegue 0 auc 0.78927 t=768s
+[rotaciones] rep 1 pliegue 1 auc 0.78741 t=891s
+[rotaciones] rep 1 pliegue 2 auc 0.78961 t=1013s
+[rotaciones] rep 1 pliegue 3 auc 0.78964 t=1136s
+[rotaciones] rep 1 pliegue 4 auc 0.79055 t=1258s
+[rotaciones] OOF0 0.78902  prueba 0.79237  media pliegues 0.78918

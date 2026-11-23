@@ -1,0 +1,11 @@
+[focal] rep 0 pliegue 0 auc 0.77745 t=112s
+[focal] rep 0 pliegue 1 auc 0.78664 t=224s
+[focal] rep 0 pliegue 2 auc 0.78874 t=335s
+[focal] rep 0 pliegue 3 auc 0.78393 t=447s
+[focal] rep 0 pliegue 4 auc 0.79464 t=558s
+[focal] rep 1 pliegue 0 auc 0.78669 t=664s
+[focal] rep 1 pliegue 1 auc 0.78488 t=771s
+[focal] rep 1 pliegue 2 auc 0.78688 t=877s
+[focal] rep 1 pliegue 3 auc 0.78592 t=984s
+[focal] rep 1 pliegue 4 auc 0.78793 t=1090s
+[focal] OOF0 0.78623  prueba 0.78852  media pliegues 0.78637

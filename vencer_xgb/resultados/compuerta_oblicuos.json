@@ -1,0 +1,27 @@
+{
+  "variante": "oblicuos",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.01476200678392347,
+    "max_depth": 4,
+    "min_hess": 14.336188463677793,
+    "submuestra": 0.7708977862995263,
+    "colsample": 0.749147867774242,
+    "lam": 0.23273276920647895,
+    "alpha": 0.1734858505685689,
+    "gamma": 0.0025656244941252787,
+    "peso_pos": 4.639476954159102,
+    "n_vistas": 2,
+    "vista_m": 151,
+    "densidad": 3
+  },
+  "it": 1430,
+  "auc_diseno": 0.7789594087925023,
+  "auc_disjunta": 0.7738977955595447,
+  "it_disjunta": 980,
+  "segundos": 2777.7980806827545,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

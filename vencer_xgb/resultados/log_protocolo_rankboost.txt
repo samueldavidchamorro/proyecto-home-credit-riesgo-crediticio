@@ -1,0 +1,11 @@
+[rankboost] rep 0 pliegue 0 auc 0.77909 t=101s
+[rankboost] rep 0 pliegue 1 auc 0.78712 t=201s
+[rankboost] rep 0 pliegue 2 auc 0.78971 t=301s
+[rankboost] rep 0 pliegue 3 auc 0.78483 t=401s
+[rankboost] rep 0 pliegue 4 auc 0.79508 t=500s
+[rankboost] rep 1 pliegue 0 auc 0.78732 t=596s
+[rankboost] rep 1 pliegue 1 auc 0.78434 t=692s
+[rankboost] rep 1 pliegue 2 auc 0.78802 t=787s
+[rankboost] rep 1 pliegue 3 auc 0.78715 t=883s
+[rankboost] rep 1 pliegue 4 auc 0.78897 t=978s
+[rankboost] OOF0 0.78713  prueba 0.79157  media pliegues 0.78716

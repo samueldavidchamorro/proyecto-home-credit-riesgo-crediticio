@@ -1,0 +1,108 @@
+[W 2026-11-22 20:45:41,646] Trial 0 failed with parameters: {'n_pool': 11, 'd_pca': 23, 'k_vec': 79, 'tau': 8.428303845098709, 'n_r': 213, 'tasa': 0.08849609528383273, 'max_depth': 5, 'colsample': 0.9134184006256638, 'lam': 71.55682161754872, 'min_hess': 5.846326121643413} because of the following error: OutOfMemoryError('Out of memory allocating 419,397,632 bytes (allocated so far: 3,110,185,472 bytes, limit set to: 3,435,554,406 bytes).').
+Traceback (most recent call last):
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\ajuste_general.py", line 35, in obj
+    a, it = evaluar(nombre, p, Xtr, ytr, Xva, yva)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\ajuste_general.py", line 18, in evaluar
+    m.fit(Xtr, ytr, Xva, yva)
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\modelos.py", line 498, in fit
+    self.mejor_auc = _auc_np(yv, self.decision(Xv)) if Xv is not None else None
+                                 ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\modelos.py", line 510, in decision
+    vec = xp.argpartition(D, self.k_vec, axis=1)[:, : self.k_vec]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\cupy\_sorting\sort.py", line 215, in argpartition
+    return a.argpartition(kth, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 1209, in cupy._core.core._ndarray_base.argpartition
+  File "cupy/_core/core.pyx", line 1228, in cupy._core.core._ndarray_base.argpartition
+  File "cupy/_core/_routines_sorting.pyx", line 298, in cupy._core._routines_sorting._ndarray_argpartition
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\cupy\_indexing\generate.py", line 415, in unravel_index
+    indices = indices // dim
+              ~~~~~~~~^^~~~~
+  File "cupy/_core/core.pyx", line 1618, in cupy._core.core._ndarray_base.__floordiv__
+  File "cupy/_core/core.pyx", line 2024, in cupy._core.core._ndarray_base.__array_ufunc__
+  File "cupy/_core/_kernel.pyx", line 1374, in cupy._core._kernel.ufunc.__call__
+  File "cupy/_core/_kernel.pyx", line 657, in cupy._core._kernel._get_out_args_from_optionals
+  File "cupy/_core/core.pyx", line 3342, in cupy._core.core._ndarray_init
+  File "cupy/_core/core.pyx", line 300, in cupy._core.core._ndarray_base._init_fast
+  File "cupy/cuda/memory.pyx", line 904, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1614, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1635, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1350, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1376, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1528, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 419,397,632 bytes (allocated so far: 3,110,185,472 bytes, limit set to: 3,435,554,406 bytes).
+[W 2026-11-22 20:45:41,690] Trial 0 failed with value None.
+Traceback (most recent call last):
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\ajuste_general.py", line 41, in <module>
+    estudio.optimize(obj, n_trials=n_trials)
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\study.py", line 502, in optimize
+    _optimize(
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\optuna\study\_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\ajuste_general.py", line 35, in obj
+    a, it = evaluar(nombre, p, Xtr, ytr, Xva, yva)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\ajuste_general.py", line 18, in evaluar
+    m.fit(Xtr, ytr, Xva, yva)
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\modelos.py", line 498, in fit
+    self.mejor_auc = _auc_np(yv, self.decision(Xv)) if Xv is not None else None
+                                 ^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\Downloads\ENTREGABLE_FINAL_ML\vencer_xgb\modelos.py", line 510, in decision
+    vec = xp.argpartition(D, self.k_vec, axis=1)[:, : self.k_vec]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\cupy\_sorting\sort.py", line 215, in argpartition
+    return a.argpartition(kth, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 1209, in cupy._core.core._ndarray_base.argpartition
+  File "cupy/_core/core.pyx", line 1228, in cupy._core.core._ndarray_base.argpartition
+  File "cupy/_core/_routines_sorting.pyx", line 298, in cupy._core._routines_sorting._ndarray_argpartition
+  File "C:\Users\samit\AppData\Local\Programs\Python\Python312\Lib\site-packages\cupy\_indexing\generate.py", line 415, in unravel_index
+    indices = indices // dim
+              ~~~~~~~~^^~~~~
+  File "cupy/_core/core.pyx", line 1618, in cupy._core.core._ndarray_base.__floordiv__
+  File "cupy/_core/core.pyx", line 2024, in cupy._core.core._ndarray_base.__array_ufunc__
+  File "cupy/_core/_kernel.pyx", line 1374, in cupy._core._kernel.ufunc.__call__
+  File "cupy/_core/_kernel.pyx", line 657, in cupy._core._kernel._get_out_args_from_optionals
+  File "cupy/_core/core.pyx", line 3342, in cupy._core.core._ndarray_init
+  File "cupy/_core/core.pyx", line 300, in cupy._core.core._ndarray_base._init_fast
+  File "cupy/cuda/memory.pyx", line 904, in cupy.cuda.memory.alloc
+  File "cupy/cuda/memory.pyx", line 1614, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1635, in cupy.cuda.memory.MemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1350, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File "cupy/cuda/memory.pyx", line 1376, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File "cupy/cuda/memory.pyx", line 1528, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 419,397,632 bytes (allocated so far: 3,110,185,472 bytes, limit set to: 3,435,554,406 bytes).
+[des] trial 0 auc 0.77472 it None t=223s
+[des] trial 1 auc 0.75151 it None t=297s
+[des] trial 2 auc 0.77112 it None t=394s
+[des] trial 3 auc 0.77357 it None t=470s
+[des] trial 4 auc 0.77707 it None t=568s
+[des] trial 5 auc 0.76800 it None t=677s
+[des] trial 6 auc 0.77215 it None t=739s
+[des] trial 7 auc 0.77286 it None t=927s
+[des] trial 8 auc 0.77491 it None t=1020s
+[des] trial 9 auc 0.76926 it None t=1072s
+[des] trial 10 auc 0.77450 it None t=1297s
+[des] trial 11 auc 0.77598 it None t=1364s
+[des] trial 12 auc 0.76950 it None t=1464s
+[des] trial 13 auc 0.77343 it None t=1518s
+[des] trial 14 auc 0.77018 it None t=1598s
+[des] trial 15 auc 0.77578 it None t=1715s
+[des] trial 16 auc 0.77570 it None t=1801s
+[des] trial 17 auc 0.77635 it None t=1873s
+[des] trial 18 auc 0.77376 it None t=1946s
+[des] trial 19 auc 0.77596 it None t=2139s
+{'variante': 'des', 'familia': 'general', 'tipo_it': None, 'params': {'n_pool': 8, 'd_pca': 16, 'k_vec': 99, 'tau': 1.2656722836380694, 'n_r': 330, 'tasa': 0.09368452631893007, 'max_depth': 4, 'colsample': 0.30314103812388266, 'lam': 0.18268942281532324, 'min_hess': 5.338528208876636}, 'it': None, 'auc_diseno': 0.7770677338252765, 'auc_disjunta': 0.7706746807407102, 'it_disjunta': None, 'segundos': 2233.2317514419556, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

@@ -1,0 +1,27 @@
+{
+  "variante": "rotaciones",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.019454613307475953,
+    "max_depth": 5,
+    "min_hess": 29.684863045403837,
+    "submuestra": 0.7588715357677612,
+    "colsample": 0.3491814182496265,
+    "lam": 1.8541729104893625,
+    "alpha": 2.9012659018684928,
+    "gamma": 0.003760404927971087,
+    "peso_pos": 3.2980636636798666,
+    "n_vistas": 3,
+    "vista_m": 67,
+    "bloque": 2
+  },
+  "it": 990,
+  "auc_diseno": 0.7780744309661514,
+  "auc_disjunta": 0.7753141442369141,
+  "it_disjunta": 780,
+  "segundos": 2589.6051683425903,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

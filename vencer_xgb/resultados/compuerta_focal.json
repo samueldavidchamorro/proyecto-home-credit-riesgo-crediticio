@@ -1,0 +1,26 @@
+{
+  "variante": "focal",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.014420143547184027,
+    "max_depth": 3,
+    "min_hess": 20.542778286285955,
+    "submuestra": 0.5690914756743068,
+    "colsample": 0.3572658893440428,
+    "lam": 0.2984699979785087,
+    "alpha": 1.9229718174853698,
+    "gamma": 0.0022865184314285023,
+    "peso_pos": 4.351779629995216,
+    "perdida": "focal",
+    "gamma_focal": 0.9324428355228338
+  },
+  "it": 1690,
+  "auc_diseno": 0.7770260819284128,
+  "auc_disjunta": 0.7744197467143679,
+  "it_disjunta": 1750,
+  "segundos": 870.194620847702,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

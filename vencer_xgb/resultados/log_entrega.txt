@@ -1,0 +1,11 @@
+> C:\Users\samit\AppData\Local\Programs\Python\Python312\python.exe construir_seccion.py
+ok
+> C:\Users\samit\AppData\Local\Programs\Python\Python312\python.exe -W ignore construir_cuaderno.py
+ejecutado: vencer_xgb\11_vencer_xgboost.ipynb
+cuaderno único: Proyecto_Home_Credit_completo.ipynb (640 celdas)
+página: docs/index.html (13.0 MB)
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+> git remote
+origin
+original
+> gh repo view samueldavidchamorro/proyecto-home-credit-riesgo-crediticio

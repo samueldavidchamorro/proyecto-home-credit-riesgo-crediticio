@@ -1,0 +1,25 @@
+{
+  "variante": "ngboost",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.01617620924717979,
+    "max_depth": 3,
+    "min_hess": 20.240286281332825,
+    "submuestra": 0.626645801269891,
+    "colsample": 0.573048618285045,
+    "lam": 0.09499535455183801,
+    "alpha": 0.004323926814280047,
+    "gamma": 0.002560202612394475,
+    "peso_pos": 3.6253183578610937,
+    "perdida": "natural"
+  },
+  "it": 360,
+  "auc_diseno": 0.7729512739639176,
+  "auc_disjunta": 0.765207704827347,
+  "it_disjunta": 170,
+  "segundos": 435.3136262893677,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

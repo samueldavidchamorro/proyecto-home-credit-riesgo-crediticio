@@ -1,0 +1,11 @@
+[ngboost] rep 0 pliegue 0 auc 0.76809 t=49s
+[ngboost] rep 0 pliegue 1 auc 0.77834 t=96s
+[ngboost] rep 0 pliegue 2 auc 0.78188 t=143s
+[ngboost] rep 0 pliegue 3 auc 0.77544 t=190s
+[ngboost] rep 0 pliegue 4 auc 0.78735 t=237s
+[ngboost] rep 1 pliegue 0 auc 0.78029 t=281s
+[ngboost] rep 1 pliegue 1 auc 0.77696 t=325s
+[ngboost] rep 1 pliegue 2 auc 0.77881 t=369s
+[ngboost] rep 1 pliegue 3 auc 0.77947 t=414s
+[ngboost] rep 1 pliegue 4 auc 0.77930 t=458s
+[ngboost] OOF0 0.77818  prueba 0.78497  media pliegues 0.77859

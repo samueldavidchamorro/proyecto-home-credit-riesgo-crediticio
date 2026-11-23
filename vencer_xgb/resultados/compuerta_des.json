@@ -1,0 +1,25 @@
+{
+  "variante": "des",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "n_pool": 8,
+    "d_pca": 16,
+    "k_vec": 99,
+    "tau": 1.2656722836380694,
+    "n_r": 330,
+    "tasa": 0.09368452631893007,
+    "max_depth": 4,
+    "colsample": 0.30314103812388266,
+    "lam": 0.18268942281532324,
+    "min_hess": 5.338528208876636
+  },
+  "it": null,
+  "auc_diseno": 0.7770677338252765,
+  "auc_disjunta": 0.7706746807407102,
+  "it_disjunta": null,
+  "segundos": 2233.2317514419556,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

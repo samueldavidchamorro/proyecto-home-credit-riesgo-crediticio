@@ -1,0 +1,26 @@
+[bosque_profundo] trial 0 auc 0.75623 it 3 t=133s
+[bosque_profundo] trial 1 auc 0.76005 it 3 t=5579s
+[bosque_profundo] trial 2 auc 0.74664 it 2 t=5685s
+[bosque_profundo] trial 3 auc 0.75771 it 3 t=22824s
+[bosque_profundo] trial 4 auc 0.75545 it 2 t=22855s
+[bosque_profundo] trial 0 auc 0.75660 it 2 t=138s
+[bosque_profundo] trial 1 auc 0.75927 it 3 t=404s
+[bosque_profundo] trial 2 auc 0.74483 it 2 t=515s
+[bosque_profundo] trial 3 auc 0.75754 it 3 t=1099s
+[bosque_profundo] trial 4 auc 0.75547 it 2 t=1128s
+[bosque_profundo] trial 5 auc 0.75393 it 3 t=1204s
+[bosque_profundo] trial 6 auc 0.75408 it 2 t=1331s
+[bosque_profundo] trial 7 auc 0.74406 it 1 t=1349s
+[bosque_profundo] trial 8 auc 0.74847 it 1 t=1362s
+[bosque_profundo] trial 9 auc 0.74586 it 1 t=1371s
+[bosque_profundo] trial 10 auc 0.75619 it 3 t=1423s
+[bosque_profundo] trial 11 auc 0.76005 it 3 t=1823s
+[bosque_profundo] trial 12 auc 0.76046 it 4 t=2190s
+[bosque_profundo] trial 13 auc 0.75959 it 3 t=2444s
+[bosque_profundo] trial 14 auc 0.75952 it 3 t=2708s
+[bosque_profundo] trial 15 auc 0.75766 it 3 t=2921s
+[bosque_profundo] trial 16 auc 0.76054 it 3 t=3144s
+[bosque_profundo] trial 17 auc 0.75948 it 4 t=3385s
+[bosque_profundo] trial 18 auc 0.75732 it 4 t=3556s
+[bosque_profundo] trial 19 auc 0.75845 it 4 t=3785s
+{'variante': 'bosque_profundo', 'familia': 'general', 'tipo_it': 'niveles', 'params': {'n_arboles': 50, 'prof': 9, 'col_arbol': 0.36104542153913954, 'col_nodo': 0.6197103900482642, 'min_hoja': 133.3190403570272, 'niveles_max': 4}, 'it': 3, 'auc_diseno': 0.7605421398266018, 'auc_disjunta': 0.7586098391305336, 'it_disjunta': 3, 'segundos': 4014.2790048122406, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

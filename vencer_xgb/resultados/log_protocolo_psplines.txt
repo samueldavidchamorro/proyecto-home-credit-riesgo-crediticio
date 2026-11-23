@@ -1,0 +1,11 @@
+[psplines] rep 0 pliegue 0 auc 0.77296 t=62s
+[psplines] rep 0 pliegue 1 auc 0.78168 t=121s
+[psplines] rep 0 pliegue 2 auc 0.78478 t=181s
+[psplines] rep 0 pliegue 3 auc 0.77872 t=241s
+[psplines] rep 0 pliegue 4 auc 0.79047 t=301s
+[psplines] rep 1 pliegue 0 auc 0.78198 t=359s
+[psplines] rep 1 pliegue 1 auc 0.78004 t=416s
+[psplines] rep 1 pliegue 2 auc 0.78229 t=474s
+[psplines] rep 1 pliegue 3 auc 0.78132 t=532s
+[psplines] rep 1 pliegue 4 auc 0.78385 t=589s
+[psplines] OOF0 0.78168  prueba 0.78323  media pliegues 0.78181

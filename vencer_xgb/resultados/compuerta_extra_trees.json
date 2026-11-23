@@ -1,0 +1,20 @@
+{
+  "variante": "extra_trees",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "n_arboles": 116,
+    "prof": 9,
+    "col_arbol": 0.28535340123808667,
+    "col_nodo": 0.5767679735219696,
+    "min_hoja": 23.384394708071188
+  },
+  "it": null,
+  "auc_diseno": 0.7531812524259665,
+  "auc_disjunta": 0.7486615611562462,
+  "it_disjunta": null,
+  "segundos": 345.3548746109009,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

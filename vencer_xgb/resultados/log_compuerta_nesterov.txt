@@ -1,0 +1,21 @@
+[nesterov] trial 0 auc 0.75763 it 30 t=20s
+[nesterov] trial 1 auc 0.75401 it 30 t=44s
+[nesterov] trial 2 auc 0.76051 it 20 t=67s
+[nesterov] trial 3 auc 0.74388 it 10 t=78s
+[nesterov] trial 4 auc 0.76200 it 30 t=89s
+[nesterov] trial 5 auc 0.75745 it 30 t=93s
+[nesterov] trial 6 auc 0.76173 it 70 t=99s
+[nesterov] trial 7 auc 0.76367 it 80 t=105s
+[nesterov] trial 8 auc 0.75004 it 20 t=112s
+[nesterov] trial 9 auc 0.76610 it 60 t=117s
+[nesterov] trial 10 auc 0.76119 it 40 t=122s
+[nesterov] trial 11 auc 0.76805 it 70 t=130s
+[nesterov] trial 12 auc 0.76641 it 60 t=139s
+[nesterov] trial 13 auc 0.76711 it 70 t=150s
+[nesterov] trial 14 auc 0.76610 it 60 t=157s
+[nesterov] trial 15 auc 0.76698 it 70 t=163s
+[nesterov] trial 16 auc 0.76885 it 80 t=175s
+[nesterov] trial 17 auc 0.75843 it 50 t=187s
+[nesterov] trial 18 auc 0.76183 it 70 t=197s
+[nesterov] trial 19 auc 0.76595 it 60 t=206s
+{'variante': 'nesterov', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.010521226116490267, 'max_depth': 7, 'min_hess': 4.274781785387868, 'submuestra': 0.8610474541539496, 'colsample': 0.22453539918704216, 'lam': 76.79533747805968, 'alpha': 0.02283645900734465, 'gamma': 0.12141726420096642, 'peso_pos': 1.9124994422157546, 'paso': 'nesterov'}, 'it': 80, 'auc_diseno': 0.7688541534229597, 'auc_disjunta': 0.762875724842991, 'it_disjunta': 70, 'segundos': 222.90343642234802, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

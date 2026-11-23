@@ -1,0 +1,21 @@
+[psplines] trial 0 auc 0.76884 it 390 t=17s
+[psplines] trial 1 auc 0.76701 it 370 t=29s
+[psplines] trial 2 auc 0.77439 it 160 t=34s
+[psplines] trial 3 auc 0.76016 it 120 t=37s
+[psplines] trial 4 auc 0.77101 it 1540 t=78s
+[psplines] trial 5 auc 0.76586 it 80 t=82s
+[psplines] trial 6 auc 0.76591 it 650 t=101s
+[psplines] trial 7 auc 0.76799 it 350 t=111s
+[psplines] trial 8 auc 0.76492 it 330 t=121s
+[psplines] trial 9 auc 0.77105 it 400 t=132s
+[psplines] trial 10 auc 0.74919 it 80 t=135s
+[psplines] trial 11 auc 0.76764 it 210 t=141s
+[psplines] trial 12 auc 0.77177 it 430 t=153s
+[psplines] trial 13 auc 0.77345 it 200 t=160s
+[psplines] trial 14 auc 0.77297 it 200 t=166s
+[psplines] trial 15 auc 0.77492 it 680 t=180s
+[psplines] trial 16 auc 0.77189 it 200 t=185s
+[psplines] trial 17 auc 0.77473 it 880 t=203s
+[psplines] trial 18 auc 0.77466 it 500 t=212s
+[psplines] trial 19 auc 0.77475 it 900 t=228s
+{'variante': 'psplines', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.16829601216054646, 'K': 9, 'lam': 34.35533046490633, 'submuestra': 0.7039792011338231}, 'it': 680, 'auc_diseno': 0.7749218323087791, 'auc_disjunta': 0.7726631312459427, 'it_disjunta': 680, 'segundos': 247.970134973526, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

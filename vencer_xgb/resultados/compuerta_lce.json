@@ -1,0 +1,24 @@
+{
+  "variante": "lce",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "n_bolsas": 5,
+    "prof_cascada": 2,
+    "min_filas": 6396,
+    "n_r": 260,
+    "tasa": 0.03284354924079371,
+    "max_depth": 4,
+    "colsample": 0.7526789125807942,
+    "lam": 17.889426306717972,
+    "min_hess": 19.635315905123505
+  },
+  "it": null,
+  "auc_diseno": 0.7737533163645488,
+  "auc_disjunta": 0.7697574444016904,
+  "it_disjunta": null,
+  "segundos": 4589.0381026268005,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

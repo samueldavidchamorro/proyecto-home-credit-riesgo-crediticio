@@ -1,0 +1,19 @@
+{
+  "variante": "lmt",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "prof": 2,
+    "lam_raiz": 184.09435222338746,
+    "lam_hoja": 6217.209495289524,
+    "min_hoja": 3804.704672567072
+  },
+  "it": null,
+  "auc_diseno": 0.7699559158218059,
+  "auc_disjunta": 0.7723558860155717,
+  "it_disjunta": null,
+  "segundos": 27.999098300933838,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

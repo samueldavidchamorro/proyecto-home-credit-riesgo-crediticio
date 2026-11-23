@@ -1,0 +1,21 @@
+[oblicuos] trial 0 auc 0.77240 it 340 t=64s
+[oblicuos] trial 1 auc 0.76701 it 220 t=93s
+[oblicuos] trial 2 auc 0.77676 it 910 t=195s
+[oblicuos] trial 3 auc 0.77580 it 390 t=235s
+[oblicuos] trial 4 auc 0.77711 it 620 t=304s
+[oblicuos] trial 5 auc 0.77733 it 1650 t=350s
+[oblicuos] trial 6 auc 0.76578 it 90 t=362s
+[oblicuos] trial 7 auc 0.77336 it 420 t=386s
+[oblicuos] trial 8 auc 0.77573 it 470 t=406s
+[oblicuos] trial 9 auc 0.77072 it 490 t=1885s
+[oblicuos] trial 10 auc 0.77103 it 140 t=1902s
+[oblicuos] trial 11 auc 0.77792 it 1980 t=1990s
+[oblicuos] trial 12 auc 0.77669 it 1060 t=2046s
+[oblicuos] trial 13 auc 0.77896 it 1430 t=2142s
+[oblicuos] trial 14 auc 0.77680 it 1980 t=2238s
+[oblicuos] trial 15 auc 0.77707 it 1860 t=2330s
+[oblicuos] trial 16 auc 0.77829 it 1410 t=2424s
+[oblicuos] trial 17 auc 0.77652 it 1480 t=2503s
+[oblicuos] trial 18 auc 0.77816 it 1190 t=2618s
+[oblicuos] trial 19 auc 0.77775 it 1430 t=2704s
+{'variante': 'oblicuos', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.01476200678392347, 'max_depth': 4, 'min_hess': 14.336188463677793, 'submuestra': 0.7708977862995263, 'colsample': 0.749147867774242, 'lam': 0.23273276920647895, 'alpha': 0.1734858505685689, 'gamma': 0.0025656244941252787, 'peso_pos': 4.639476954159102, 'n_vistas': 2, 'vista_m': 151, 'densidad': 3}, 'it': 1430, 'auc_diseno': 0.7789594087925023, 'auc_disjunta': 0.7738977955595447, 'it_disjunta': 980, 'segundos': 2777.7980806827545, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

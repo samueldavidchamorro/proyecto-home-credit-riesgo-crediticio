@@ -1,0 +1,26 @@
+{
+  "variante": "rankboost",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.03605493766354546,
+    "max_depth": 5,
+    "min_hess": 1.5108981693988983,
+    "submuestra": 0.920620197989433,
+    "colsample": 0.4048006224168691,
+    "lam": 0.11205641088426943,
+    "alpha": 0.3188242297658189,
+    "gamma": 0.001251009206100862,
+    "peso_pos": 3.7106740095834336,
+    "perdida": "pares",
+    "pares_k": 4
+  },
+  "it": 630,
+  "auc_diseno": 0.7768233479642089,
+  "auc_disjunta": 0.7693373206889786,
+  "it_disjunta": 280,
+  "segundos": 1054.6854538917542,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

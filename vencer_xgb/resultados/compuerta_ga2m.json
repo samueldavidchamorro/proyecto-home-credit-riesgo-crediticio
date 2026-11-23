@@ -1,0 +1,27 @@
+{
+  "variante": "ga2m",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.08275147215273751,
+    "max_depth": 2,
+    "min_hess": 74.9195941431987,
+    "submuestra": 0.6190807925339726,
+    "colsample": 1.0,
+    "lam": 1.1999528445240044,
+    "alpha": 0.21399565815301264,
+    "gamma": 0.0013743832865816404,
+    "peso_pos": 2.2280086624830804,
+    "una_variable": true,
+    "pares_ga2m": 7,
+    "rondas_main": 2403
+  },
+  "it": 2470,
+  "auc_diseno": 0.766008826307959,
+  "auc_disjunta": 0.7659659377470697,
+  "it_disjunta": 2660,
+  "segundos": 580.2028732299805,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

@@ -1,0 +1,26 @@
+{
+  "variante": "rgf",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.0337983049214134,
+    "max_depth": 6,
+    "min_hess": 70.98936257405903,
+    "submuestra": 0.5355180290989434,
+    "colsample": 0.26970343976123257,
+    "lam": 0.012046852412030323,
+    "alpha": 2.1403233140986067,
+    "gamma": 0.7557505648364845,
+    "peso_pos": 4.480048592987277,
+    "fc_cada": 191,
+    "tasa_fc": 0.8192427077950513
+  },
+  "it": 190,
+  "auc_diseno": 0.7720335903208885,
+  "auc_disjunta": 0.7664229508845463,
+  "it_disjunta": 190,
+  "segundos": 378.01148557662964,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

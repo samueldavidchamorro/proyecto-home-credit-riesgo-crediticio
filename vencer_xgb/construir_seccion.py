@@ -9,8 +9,9 @@ code = nbf.v4.new_code_cell
 celdas = [
     md("""# 11. Intento de superar a XGBoost con algoritmos originales (Top 30)
 
-Este capítulo ejecuta la ruta del documento *Top 30 de algoritmos originales para intentar vencer a XGBoost
-con significancia*. Cada candidato se programó con la API de NumPy (en GPU, con CuPy como sustituto directo de
+Este capítulo ejecuta **los 30 algoritmos** del documento *Top 30 de algoritmos originales para intentar vencer a
+XGBoost con significancia*: primero la ruta recomendada (#1–#4, #6, #7, #11, #12, #26) y después una ampliación
+prerregistrada con los 21 restantes. Cada candidato se programó con la API de NumPy (en GPU, con CuPy como sustituto directo de
 NumPy) y se comparó contra un XGBoost ajustado con **el mismo presupuesto** y **las mismas variables**.
 
 Estructura:
@@ -31,7 +32,25 @@ from IPython.display import Markdown, display
 from sklearn.metrics import roc_auc_score
 RES = 'resultados'
 leer = lambda n: json.load(open(os.path.join(RES, n), encoding='utf-8'))
-pd.set_option('display.float_format', lambda x: f'{x:.5f}')"""),
+pd.set_option('display.float_format', lambda x: f'{x:.5f}')
+TOP30 = {  # nombre en el código -> (# del documento, nombre, probabilidad a priori del documento)
+    'sl': (1, 'Super Learner (Caruana)', 'Media (la mejor)'), 'sl2': (1, 'Super Learner + réplicas (#1 + #11)', 'Media'),
+    'sl3': (1, 'Super Learner, biblioteca ampliada', 'Media'), 'hojas_lineales': (2, 'GBDT con hojas lineales', 'Media'),
+    'heterogeneo': (3, 'Newton heterogéneo', 'Media'), 'newton': (4, 'Newton propio', 'Media-baja (requisito)'),
+    'ktboost': (5, 'Árbol + núcleo (KTBoost)', 'Media-baja'), 'olvidadizo': (6, 'Árboles olvidadizos', 'Media-baja'),
+    'dart': (7, 'DART', 'Media-baja'), 'rotaciones': (8, 'Rotaciones aleatorias', 'Media-baja'),
+    'oblicuos': (9, 'Cortes oblicuos dispersos', 'Media-baja'), 'rgf': (10, 'RGF totalmente correctivo', 'Media-baja'),
+    'newton_s1': (11, 'Réplica por semilla (MultiBoosting)', 'Baja'), 'mvs': (12, 'MVS', 'Baja'),
+    'infiniteboost': (13, 'InfiniteBoost', 'Baja'), 'lce': (14, 'Cascada local (LCE)', 'Baja'),
+    'bstacking': (15, 'bstacking (metamodelo logístico)', 'Baja-media'), 'rankboost': (16, 'RankBoost (pares, AUC)', 'Baja'),
+    'trboost': (17, 'TRBoost', 'Baja'), 'nesterov': (18, 'Nesterov', 'Baja'), 'focal': (19, 'Pérdida focal', 'Baja'),
+    'bosque_profundo': (20, 'Bosque profundo en cascada', 'Baja'), 'bosque_rotacion': (21, 'Bosque de rotación', 'Baja'),
+    'extra_trees': (22, 'Árboles extremadamente aleatorios', 'Baja'), 'spe': (23, 'Self-paced ensemble', 'Baja'),
+    'des': (24, 'Selección dinámica', 'Baja'), 'lmt': (25, 'Árbol de modelo logístico', 'Muy baja'),
+    'goss': (26, 'GOSS', 'Muy baja en AUC'), 'bart': (27, 'BART probit', 'Muy baja'),
+    'psplines': (28, 'Boosting con P-splines', 'Muy baja'), 'ga2m': (29, 'GA²M/EBM', 'Muy baja'),
+    'ngboost': (30, 'NGBoost', 'Muy baja'),
+}"""),
     md("## 11.1 Documento de partida"),
     code("display(Markdown(open('TOP30_algoritmos.md', encoding='utf-8').read()))"),
     md("""## 11.2 Protocolo prerregistrado
@@ -59,8 +78,13 @@ pd.Series([c.split('_')[0] for c in cols]).value_counts().head(12).rename('varia
 - Variantes del Top 30 activables por parámetro: #2 hojas lineales, #3 profundidad heterogénea, #6 árboles
   olvidadizos, #7 DART, #12 MVS, #26 GOSS, #29 un árbol por variable, #11 réplicas por semilla, #1 Super Learner
   (`superlearner.py`, selección de Caruana con pesos cruzados por pliegue).
+- Ampliación (`modelos.py`): #5 KTBoost, #8 rotaciones, #9 cortes oblicuos, #10 RGF, #13 InfiniteBoost, #14 LCE,
+  #15 bstacking, #16 RankBoost, #17 TRBoost, #18 Nesterov, #19 pérdida focal, #20 bosque profundo, #21 bosque de
+  rotación, #22 árboles extremadamente aleatorios, #23 SPE, #24 selección dinámica, #25 LMT, #27 BART probit,
+  #28 P-splines, #29 GA²M y #30 NGBoost.
 - No usa xgboost, lightgbm, catboost, torch, tensorflow ni `sklearn.ensemble`."""),
     code("print(open('gbdt.py', encoding='utf-8').read())"),
+    code("print(open('modelos.py', encoding='utf-8').read())"),
     md("## 11.5 XGBoost de referencia (GPU, TPE de 20 evaluaciones)"),
     code("""x = leer('xgb_ajuste.json')
 display(pd.Series(x['params']).to_frame('hiperparámetro'))
@@ -73,17 +97,19 @@ XGBoost en las dos."""),
     code("""filas = []
 for p in sorted(glob.glob(os.path.join(RES, 'compuerta_*.json'))):
     c = json.load(open(p, encoding='utf-8'))
-    filas.append(dict(variante=c['variante'], auc_diseno=c['auc_diseno'], dif_diseno=c['auc_diseno'] - x['auc_diseno'],
+    num, nom, prob = TOP30[c['variante']]
+    filas.append(dict(n=num, algoritmo=nom, prob_a_priori=prob, variante=c['variante'], auc_diseno=c['auc_diseno'], dif_diseno=c['auc_diseno'] - x['auc_diseno'],
                       auc_disjunta=c['auc_disjunta'], dif_disjunta=c['auc_disjunta'] - x['auc_disjunta'],
                       pasa=c['pasa_compuerta'], minutos=c['segundos'] / 60))
 comp = pd.DataFrame(filas).sort_values('auc_diseno', ascending=False)
+print(f'{len(comp)} algoritmos pasaron por la compuerta; la pasan: {int(comp.pasa.sum())}')
 display(comp)
-fig, ax = plt.subplots(figsize=(9, 4))
+fig, ax = plt.subplots(figsize=(12, 4.5))
 w = 0.38; i = np.arange(len(comp))
 ax.bar(i - w/2, comp['dif_diseno'] * 1000, w, label='diseño')
 ax.bar(i + w/2, comp['dif_disjunta'] * 1000, w, label='disjunta')
 ax.axhline(0, color='k', lw=0.8)
-ax.set_xticks(i, comp['variante'], rotation=20)
+ax.set_xticks(i, [f"#{a} {b}" for a, b in zip(comp['n'], comp['variante'])], rotation=60, ha='right', fontsize=8)
 ax.set_ylabel('AUC variante − AUC XGBoost (×1000)')
 ax.set_title('Compuerta de cribado'); ax.legend(); plt.tight_layout(); plt.show()"""),
     md("""## 11.7 Protocolo completo y Super Learner
@@ -101,10 +127,10 @@ for p in sorted(glob.glob(os.path.join(RES, 'pred_*.npz'))):
                       media_pliegues=d['auc_pliegues'].mean(), de_pliegues=d['auc_pliegues'].std(ddof=1)))
 tabla = pd.DataFrame(filas).sort_values('auc_oof', ascending=False).reset_index(drop=True)
 display(tabla)
-for n in ('sl', 'sl2'):
+for n in ('sl', 'sl2', 'sl3', 'bstacking'):
     if os.path.exists(os.path.join(RES, f'superlearner_{n}.json')):
         s = leer(f'superlearner_{n}.json')
-        print(n, 'pesos (prueba):', {k: round(v, 3) for k, v in s['pesos_test'].items() if v > 0})"""),
+        print(n, 'pesos (prueba):', {k: round(v, 3) for k, v in s['pesos_test'].items() if abs(v) > 1e-9})"""),
     code("""base = np.load(os.path.join(RES, 'pred_xgb.npz'))['auc_pliegues']
 fig, ax = plt.subplots(figsize=(9, 4))
 for n in tabla['modelo']:
@@ -138,19 +164,26 @@ else:
              f"{m['auc_oof']:.5f} frente a {m['auc_oof_xgb']:.5f} ({m['dif_oof']:+.5f}) y prueba {m['auc_test']:.5f} frente a "
              f"{m['auc_test_xgb']:.5f} ({m['dif_test']:+.5f}). Se reporta como resultado negativo, sin cambiar las reglas.")
 display(Markdown(texto))"""),
-    md("""Lectura:
+    md("### Lectura de los resultados (generada a partir de los números)"),
+    code("""mejor_ind = comp.iloc[0]
+lineas = [f"- Compuerta: {len(comp)} algoritmos evaluados; pasan {int(comp.pasa.sum())}. El de mayor AUC de diseño fue "
+          f"#{mejor_ind.n} {mejor_ind.algoritmo} ({mejor_ind.auc_diseno:.5f}, {mejor_ind.dif_diseno:+.5f} frente a XGBoost)."]
+gd = comp[comp.dif_disjunta > 0]
+if len(gd):
+    lineas.append('- Superan a XGBoost en la partición disjunta (pero no en las dos): ' +
+                  ', '.join(f"#{r.n} {r.variante} ({r.dif_disjunta:+.4f})" for r in gd.itertuples()) + '.')
+for r in R.itertuples():
+    lineas.append(f"- `{r.candidato}`: OOF {r.dif_oof:+.5f}, prueba {r.dif_test:+.5f}, pliegues ganados {r.pliegues_ganados}/10 "
+                  f"-> {r.veredicto}.")
+for n in ('sl', 'sl2', 'sl3', 'bstacking'):
+    p = os.path.join(RES, f'superlearner_{n}.json')
+    if os.path.exists(p):
+        w = {k: v for k, v in leer(f'superlearner_{n}.json')['pesos_test'].items() if abs(v) > 0.05}
+        lineas.append(f"- Miembros con más peso en `{n}`: " + ', '.join(f"{k} ({v:.2f})" for k, v in
+                      sorted(w.items(), key=lambda kv: -abs(kv[1]))) + '.')
+display(Markdown(chr(10).join(lineas)))"""),
+    md("""Notas:
 
-- Ninguna de las siete variantes pasó la compuerta (superar a XGBoost en diseño **y** en disjunta). Las más
-  cercanas fueron #2 hojas lineales (−0.00016 en diseño) y #6 árboles olvidadizos (ganó en la disjunta, +0.002,
-  pero perdió en diseño). Con el mismo presupuesto de ajuste, los boostings propios quedan a milésimas de XGBoost,
-  lo que confirma que el motor de Newton está bien construido (compuerta 0 del documento).
-- El Super Learner (#1) cerró la brecha de ~0.001 de la mejor variante individual a −0.0003 en AUC fuera de pliegue
-  (p de DeLong no significativa), pero en la prueba XGBoost sigue arriba por 0.001 y esa diferencia **sí** es
-  significativa a favor de XGBoost. Caruana eligió casi solo profundidad heterogénea (#3) y árboles olvidadizos
-  (#6), los dos sesgos inductivos más distintos de XGBoost.
-- La segunda ronda prerregistrada (#11, réplicas por semilla, y las variantes restantes en la biblioteca) no cambió
-  nada: Caruana les dio peso casi nulo. Quitar varianza no ayuda cuando la brecha es de sesgo.
-- Se reporta como resultado negativo, sin cambiar las reglas después de ver los números.
 - Limitación: el código de ELAR-R (`src/`) no estaba en el repositorio entregado, así que esta comparación usa una
   matriz de 787 variables propia y no las 528 entradas del E3; las cifras no se comparan uno a uno con las de
   los capítulos 3 y 6.
@@ -161,7 +194,8 @@ display(Markdown(texto))"""),
 cd vencer_xgb
 python features.py          # matriz de variables (datos en ../datos/cache)
 python ajuste_xgb.py        # TPE de XGBoost
-python supervisor.py        # compuertas, protocolo completo, Super Learner y pruebas (reanudable)
+python supervisor.py        # ruta recomendada: compuertas, protocolo completo, Super Learner y pruebas (reanudable)
+python supervisor2.py       # ampliación: los 21 algoritmos restantes, sl3, bstacking y pruebas finales
 ```"""),
 ]
 

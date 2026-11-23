@@ -1,0 +1,11 @@
+[oblicuos] rep 0 pliegue 0 auc 0.77992 t=280s
+[oblicuos] rep 0 pliegue 1 auc 0.78834 t=557s
+[oblicuos] rep 0 pliegue 2 auc 0.79170 t=835s
+[oblicuos] rep 0 pliegue 3 auc 0.78571 t=1111s
+[oblicuos] rep 0 pliegue 4 auc 0.79657 t=1389s
+[oblicuos] rep 1 pliegue 0 auc 0.78808 t=1659s
+[oblicuos] rep 1 pliegue 1 auc 0.78559 t=1930s
+[oblicuos] rep 1 pliegue 2 auc 0.78837 t=2201s
+[oblicuos] rep 1 pliegue 3 auc 0.78792 t=2471s
+[oblicuos] rep 1 pliegue 4 auc 0.78936 t=2745s
+[oblicuos] OOF0 0.78840  prueba 0.79052  media pliegues 0.78816

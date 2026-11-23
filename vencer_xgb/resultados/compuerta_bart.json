@@ -1,0 +1,20 @@
+{
+  "variante": "bart",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "m": 168,
+    "n_iter": 164,
+    "k": 2.9476226870366067,
+    "alfa": 0.9451118389361077,
+    "beta": 1.821750334617907
+  },
+  "it": null,
+  "auc_diseno": 0.7470758158193641,
+  "auc_disjunta": 0.7282468956049276,
+  "it_disjunta": null,
+  "segundos": 1453.1798632144928,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

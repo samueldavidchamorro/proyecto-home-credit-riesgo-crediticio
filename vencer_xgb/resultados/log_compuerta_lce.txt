@@ -1,0 +1,21 @@
+[lce] trial 0 auc 0.77318 it None t=220s
+[lce] trial 1 auc 0.75392 it None t=318s
+[lce] trial 2 auc 0.75148 it None t=649s
+[lce] trial 3 auc 0.75930 it None t=918s
+[lce] trial 4 auc 0.76609 it None t=1419s
+[lce] trial 5 auc 0.77202 it None t=1525s
+[lce] trial 6 auc 0.77233 it None t=1563s
+[lce] trial 7 auc 0.76977 it None t=1705s
+[lce] trial 8 auc 0.76986 it None t=1791s
+[lce] trial 9 auc 0.77287 it None t=1893s
+[lce] trial 10 auc 0.77375 it None t=2107s
+[lce] trial 11 auc 0.77190 it None t=2355s
+[lce] trial 12 auc 0.76548 it None t=3006s
+[lce] trial 13 auc 0.77181 it None t=3317s
+[lce] trial 14 auc 0.76273 it None t=3538s
+[lce] trial 15 auc 0.77315 it None t=3659s
+[lce] trial 16 auc 0.77342 it None t=3915s
+[lce] trial 17 auc 0.77369 it None t=4106s
+[lce] trial 18 auc 0.77327 it None t=4264s
+[lce] trial 19 auc 0.77327 it None t=4354s
+{'variante': 'lce', 'familia': 'general', 'tipo_it': None, 'params': {'n_bolsas': 5, 'prof_cascada': 2, 'min_filas': 6396, 'n_r': 260, 'tasa': 0.03284354924079371, 'max_depth': 4, 'colsample': 0.7526789125807942, 'lam': 17.889426306717972, 'min_hess': 19.635315905123505}, 'it': None, 'auc_diseno': 0.7737533163645488, 'auc_disjunta': 0.7697574444016904, 'it_disjunta': None, 'segundos': 4589.0381026268005, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

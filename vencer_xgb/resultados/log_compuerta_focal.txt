@@ -1,0 +1,21 @@
+[focal] trial 0 auc 0.76765 it 310 t=52s
+[focal] trial 1 auc 0.77305 it 360 t=66s
+[focal] trial 2 auc 0.76405 it 170 t=77s
+[focal] trial 3 auc 0.77059 it 810 t=133s
+[focal] trial 4 auc 0.77391 it 530 t=172s
+[focal] trial 5 auc 0.77442 it 440 t=194s
+[focal] trial 6 auc 0.77703 it 1690 t=235s
+[focal] trial 7 auc 0.76461 it 160 t=256s
+[focal] trial 8 auc 0.77378 it 740 t=315s
+[focal] trial 9 auc 0.77177 it 440 t=370s
+[focal] trial 10 auc 0.77600 it 2150 t=420s
+[focal] trial 11 auc 0.77563 it 2040 t=470s
+[focal] trial 12 auc 0.77639 it 1280 t=522s
+[focal] trial 13 auc 0.77561 it 1150 t=569s
+[focal] trial 14 auc 0.77681 it 1180 t=615s
+[focal] trial 15 auc 0.77553 it 1490 t=659s
+[focal] trial 16 auc 0.77522 it 1260 t=692s
+[focal] trial 17 auc 0.77696 it 1540 t=747s
+[focal] trial 18 auc 0.77567 it 1120 t=788s
+[focal] trial 19 auc 0.77592 it 940 t=822s
+{'variante': 'focal', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.014420143547184027, 'max_depth': 3, 'min_hess': 20.542778286285955, 'submuestra': 0.5690914756743068, 'colsample': 0.3572658893440428, 'lam': 0.2984699979785087, 'alpha': 1.9229718174853698, 'gamma': 0.0022865184314285023, 'peso_pos': 4.351779629995216, 'perdida': 'focal', 'gamma_focal': 0.9324428355228338}, 'it': 1690, 'auc_diseno': 0.7770260819284128, 'auc_disjunta': 0.7744197467143679, 'it_disjunta': 1750, 'segundos': 870.194620847702, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

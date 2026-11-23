@@ -28,12 +28,30 @@ def caruana(M, y, rondas=50):
     return cuenta / cuenta.sum()
 
 
+def logistica(M, y, lam=1.0, iters=25):
+    """#15 bstacking: metamodelo logístico L2 (IRLS propio, NumPy) sobre márgenes estandarizados."""
+    Z = np.column_stack([np.ones(len(y)), M])
+    b = np.zeros(Z.shape[1])
+    reg = np.full(Z.shape[1], lam)
+    reg[0] = 1e-8
+    for _ in range(iters):
+        p = 1 / (1 + np.exp(-Z @ b))
+        w = np.maximum(p * (1 - p), 1e-9)
+        b = b + np.linalg.solve(Z.T @ (Z * w[:, None]) + np.diag(reg), Z.T @ (y - p) - reg * b)
+    return b
+
+
 def estandarizar(M, ref):
     return (M - ref.mean(0)) / ref.std(0)
 
 
 if __name__ == "__main__":
-    salida, miembros = sys.argv[1], sys.argv[2:]
+    args = sys.argv[1:]
+    usar_log = "--logistica" in args
+    args = [a for a in args if a != "--logistica"]
+    salida, miembros = args[0], args[1:]
+    ajustar = (lambda M_, y_: logistica(M_, y_)) if usar_log else caruana
+    aplicar = (lambda M_, w_: w_[0] + M_ @ w_[1:]) if usar_log else (lambda M_, w_: M_ @ w_)
     _, y = cargar()
     P = particiones()
     ytr = y[P["tr"]]
@@ -47,12 +65,14 @@ if __name__ == "__main__":
         M = estandarizar(oof[rep], oof[rep])
         for k, (_, b) in enumerate(pliegues(ytr, rep)):
             fuera = np.setdiff1d(np.arange(len(ytr)), b)
-            w = caruana(M[fuera], ytr[fuera])
+            w = ajustar(M[fuera], ytr[fuera])
             pesos_pl.append(w.tolist())
-            sl_oof[rep][b] = M[b] @ w
+            sl_oof[rep][b] = aplicar(M[b], w)
             aucs[rep * 5 + k] = roc_auc_score(ytr[b], sl_oof[rep][b])
-    w_test = caruana(estandarizar(oof[0], oof[0]), ytr)
-    test = estandarizar(T, oof[0]) @ w_test
+    w_test = ajustar(estandarizar(oof[0], oof[0]), ytr)
+    test = aplicar(estandarizar(T, oof[0]), w_test)
+    if usar_log:
+        w_test = w_test[1:]
     np.savez(os.path.join(RES, f"pred_{salida}.npz"), oof0=sl_oof[0], oof1=sl_oof[1], test=test, auc_pliegues=aucs)
     info = dict(miembros=miembros, pesos_test=dict(zip(miembros, w_test.tolist())), pesos_pliegues=pesos_pl,
                 auc_oof0=roc_auc_score(ytr, sl_oof[0]), auc_test=roc_auc_score(y[P["te"]], test),

@@ -1,0 +1,21 @@
+[rotaciones] trial 0 auc 0.77329 it 220 t=49s
+[rotaciones] trial 1 auc 0.77243 it 320 t=87s
+[rotaciones] trial 2 auc 0.77673 it 940 t=192s
+[rotaciones] trial 3 auc 0.77787 it 340 t=228s
+[rotaciones] trial 4 auc 0.77579 it 670 t=302s
+[rotaciones] trial 5 auc 0.77730 it 1840 t=353s
+[rotaciones] trial 6 auc 0.76466 it 160 t=369s
+[rotaciones] trial 7 auc 0.77463 it 450 t=394s
+[rotaciones] trial 8 auc 0.77652 it 840 t=427s
+[rotaciones] trial 9 auc 0.77178 it 570 t=2075s
+[rotaciones] trial 10 auc 0.76936 it 140 t=2096s
+[rotaciones] trial 11 auc 0.77656 it 1430 t=2156s
+[rotaciones] trial 12 auc 0.77652 it 1350 t=2193s
+[rotaciones] trial 13 auc 0.77186 it 290 t=2251s
+[rotaciones] trial 14 auc 0.77807 it 990 t=2302s
+[rotaciones] trial 15 auc 0.77649 it 490 t=2348s
+[rotaciones] trial 16 auc 0.77735 it 1950 t=2429s
+[rotaciones] trial 17 auc 0.77778 it 1370 t=2466s
+[rotaciones] trial 18 auc 0.77329 it 170 t=2483s
+[rotaciones] trial 19 auc 0.77717 it 810 t=2543s
+{'variante': 'rotaciones', 'familia': 'general', 'tipo_it': 'rondas', 'params': {'tasa': 0.019454613307475953, 'max_depth': 5, 'min_hess': 29.684863045403837, 'submuestra': 0.7588715357677612, 'colsample': 0.3491814182496265, 'lam': 1.8541729104893625, 'alpha': 2.9012659018684928, 'gamma': 0.003760404927971087, 'peso_pos': 3.2980636636798666, 'n_vistas': 3, 'vista_m': 67, 'bloque': 2}, 'it': 990, 'auc_diseno': 0.7780744309661514, 'auc_disjunta': 0.7753141442369141, 'it_disjunta': 780, 'segundos': 2589.6051683425903, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

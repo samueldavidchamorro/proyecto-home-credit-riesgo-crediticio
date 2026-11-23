@@ -1,0 +1,26 @@
+{
+  "variante": "trboost",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.014533067882664917,
+    "max_depth": 4,
+    "min_hess": 20.147524539936637,
+    "submuestra": 0.7032029115004208,
+    "colsample": 0.4618482502022355,
+    "lam": 0.13710493933704357,
+    "alpha": 7.730447340991963,
+    "gamma": 0.02471544986327596,
+    "peso_pos": 3.3992246028678186,
+    "paso": "confianza",
+    "mu0": 0.012904898112784988
+  },
+  "it": 1370,
+  "auc_diseno": 0.7781865990244773,
+  "auc_disjunta": 0.7744859477077406,
+  "it_disjunta": 1190,
+  "segundos": 912.3811156749725,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

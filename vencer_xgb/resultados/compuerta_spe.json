@@ -1,0 +1,23 @@
+{
+  "variante": "spe",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "n_est": 16,
+    "k_cubetas": 14,
+    "n_r": 513,
+    "tasa": 0.045073058965078336,
+    "max_depth": 6,
+    "colsample": 0.9756226125722248,
+    "lam": 0.11548588368694952,
+    "min_hess": 1.0020026871286347
+  },
+  "it": null,
+  "auc_diseno": 0.777238761828823,
+  "auc_disjunta": 0.7707575898544294,
+  "it_disjunta": null,
+  "segundos": 6455.321024894714,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

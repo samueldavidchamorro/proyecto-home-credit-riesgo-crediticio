@@ -1,0 +1,21 @@
+[lmt] trial 0 auc 0.75713 it None t=7s
+[lmt] trial 1 auc 0.74728 it None t=8s
+[lmt] trial 2 auc 0.76181 it None t=9s
+[lmt] trial 3 auc 0.70029 it None t=9s
+[lmt] trial 4 auc 0.76719 it None t=10s
+[lmt] trial 5 auc 0.75263 it None t=11s
+[lmt] trial 6 auc 0.75098 it None t=11s
+[lmt] trial 7 auc 0.74544 it None t=12s
+[lmt] trial 8 auc 0.73746 it None t=13s
+[lmt] trial 9 auc 0.76538 it None t=13s
+[lmt] trial 10 auc 0.75544 it None t=14s
+[lmt] trial 11 auc 0.76637 it None t=15s
+[lmt] trial 12 auc 0.76983 it None t=15s
+[lmt] trial 13 auc 0.76428 it None t=16s
+[lmt] trial 14 auc 0.76934 it None t=17s
+[lmt] trial 15 auc 0.76958 it None t=17s
+[lmt] trial 16 auc 0.76816 it None t=18s
+[lmt] trial 17 auc 0.76477 it None t=19s
+[lmt] trial 18 auc 0.76996 it None t=19s
+[lmt] trial 19 auc 0.76331 it None t=20s
+{'variante': 'lmt', 'familia': 'general', 'tipo_it': None, 'params': {'prof': 2, 'lam_raiz': 184.09435222338746, 'lam_hoja': 6217.209495289524, 'min_hoja': 3804.704672567072}, 'it': None, 'auc_diseno': 0.7699559158218059, 'auc_disjunta': 0.7723558860155717, 'it_disjunta': None, 'segundos': 27.999098300933838, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

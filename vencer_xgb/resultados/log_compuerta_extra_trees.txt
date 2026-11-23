@@ -1,0 +1,21 @@
+[extra_trees] trial 0 auc 0.75167 it None t=23s
+[extra_trees] trial 1 auc 0.74834 it None t=39s
+[extra_trees] trial 2 auc 0.74947 it None t=56s
+[extra_trees] trial 3 auc 0.73886 it None t=58s
+[extra_trees] trial 4 auc 0.75077 it None t=91s
+[extra_trees] trial 5 auc 0.74294 it None t=99s
+[extra_trees] trial 6 auc 0.74632 it None t=107s
+[extra_trees] trial 7 auc 0.75066 it None t=127s
+[extra_trees] trial 8 auc 0.74694 it None t=135s
+[extra_trees] trial 9 auc 0.74419 it None t=141s
+[extra_trees] trial 10 auc 0.75136 it None t=166s
+[extra_trees] trial 11 auc 0.75175 it None t=186s
+[extra_trees] trial 12 auc 0.74747 it None t=192s
+[extra_trees] trial 13 auc 0.75160 it None t=207s
+[extra_trees] trial 14 auc 0.74974 it None t=221s
+[extra_trees] trial 15 auc 0.75166 it None t=235s
+[extra_trees] trial 16 auc 0.75318 it None t=255s
+[extra_trees] trial 17 auc 0.74981 it None t=273s
+[extra_trees] trial 18 auc 0.75050 it None t=288s
+[extra_trees] trial 19 auc 0.75264 it None t=320s
+{'variante': 'extra_trees', 'familia': 'general', 'tipo_it': None, 'params': {'n_arboles': 116, 'prof': 9, 'col_arbol': 0.28535340123808667, 'col_nodo': 0.5767679735219696, 'min_hoja': 23.384394708071188}, 'it': None, 'auc_diseno': 0.7531812524259665, 'auc_disjunta': 0.7486615611562462, 'it_disjunta': None, 'segundos': 345.3548746109009, 'xgb_diseno': 0.7795273533242792, 'xgb_disjunta': 0.7745280205966131, 'pasa_compuerta': False}

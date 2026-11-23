@@ -1,0 +1,11 @@
+[lmt] rep 0 pliegue 0 auc 0.77017 t=24s
+[lmt] rep 0 pliegue 1 auc 0.78007 t=45s
+[lmt] rep 0 pliegue 2 auc 0.78292 t=67s
+[lmt] rep 0 pliegue 3 auc 0.77529 t=89s
+[lmt] rep 0 pliegue 4 auc 0.78837 t=111s
+[lmt] rep 1 pliegue 0 auc 0.77958 t=130s
+[lmt] rep 1 pliegue 1 auc 0.77779 t=149s
+[lmt] rep 1 pliegue 2 auc 0.77919 t=168s
+[lmt] rep 1 pliegue 3 auc 0.77922 t=187s
+[lmt] rep 1 pliegue 4 auc 0.78055 t=206s
+[lmt] OOF0 0.77932  prueba 0.78148  media pliegues 0.77932

@@ -1,0 +1,21 @@
+{
+  "variante": "bosque_rotacion",
+  "familia": "general",
+  "tipo_it": null,
+  "params": {
+    "n_arboles": 45,
+    "prof": 10,
+    "col_arbol": 0.4727696921635992,
+    "col_nodo": 0.5312328008132141,
+    "min_hoja": 114.8426013358074,
+    "rot_k": 8
+  },
+  "it": null,
+  "auc_diseno": 0.7485347636256169,
+  "auc_disjunta": 0.7421307121248224,
+  "it_disjunta": null,
+  "segundos": 797.8145380020142,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}

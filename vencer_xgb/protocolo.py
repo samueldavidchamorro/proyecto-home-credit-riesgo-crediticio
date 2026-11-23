@@ -39,6 +39,19 @@ def correr_propio(Xtr, ytr, Xva, Xte, info):
     return pv, pt
 
 
+def correr_general(Xtr, ytr, Xva, Xte, info):
+    """Algoritmos de la ampliación (modelos.py): rondas = it × 1.2 para los iterativos; niveles = it (bosque profundo)."""
+    import modelos
+    from gbdt import a_np
+    tipo = info.get("tipo_it")
+    n = int(info["it"] * MULT_RONDAS) if tipo == "rondas" else (int(info["it"]) if tipo == "niveles" else None)
+    m = modelos.construir(info["variante"], info["params"], n_rondas=n)
+    m.fit(Xtr, ytr)
+    pv = m.decision(Xva)
+    pt = m.decision(Xte) if Xte is not None else None
+    return np.asarray(pv), (np.asarray(pt) if pt is not None else None)
+
+
 def ejecutar(nombre):
     X, y = cargar()
     P = particiones()
@@ -54,7 +67,7 @@ def ejecutar(nombre):
             info["params"] = dict(info["params"], semilla=int(sem))
         else:
             info = leer_json(f"compuerta_{nombre}.json")
-        f = correr_propio
+        f = correr_general if info.get("familia") == "general" else correr_propio
     ruta = os.path.join(RES, f"pred_{nombre}.npz")
     parcial = dict(np.load(ruta)) if os.path.exists(ruta) else {}
     oof = [parcial.get("oof0", np.full(len(tr), np.nan)), parcial.get("oof1", np.full(len(tr), np.nan))]

@@ -1,0 +1,11 @@
+[ktboost] rep 0 pliegue 0 auc 0.77903 t=111s
+[ktboost] rep 0 pliegue 1 auc 0.78706 t=215s
+[ktboost] rep 0 pliegue 2 auc 0.78975 t=319s
+[ktboost] rep 0 pliegue 3 auc 0.78427 t=422s
+[ktboost] rep 0 pliegue 4 auc 0.79452 t=525s
+[ktboost] rep 1 pliegue 0 auc 0.78740 t=624s
+[ktboost] rep 1 pliegue 1 auc 0.78556 t=723s
+[ktboost] rep 1 pliegue 2 auc 0.78788 t=823s
+[ktboost] rep 1 pliegue 3 auc 0.78736 t=922s
+[ktboost] rep 1 pliegue 4 auc 0.78857 t=1021s
+[ktboost] OOF0 0.78688  prueba 0.79090  media pliegues 0.78714

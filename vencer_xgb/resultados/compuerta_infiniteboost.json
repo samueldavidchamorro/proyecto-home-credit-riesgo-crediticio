@@ -1,0 +1,26 @@
+{
+  "variante": "infiniteboost",
+  "familia": "general",
+  "tipo_it": "rondas",
+  "params": {
+    "tasa": 0.016445116184131043,
+    "max_depth": 8,
+    "min_hess": 1.329607779771689,
+    "submuestra": 0.7924433987671529,
+    "colsample": 0.2270575468640144,
+    "lam": 1.0206722248302285,
+    "alpha": 0.13378952828182752,
+    "gamma": 0.1324287074139983,
+    "peso_pos": 4.873623792147454,
+    "paso": "infinito",
+    "tasa_c": 0.6774128685673906
+  },
+  "it": 420,
+  "auc_diseno": 0.7640493979393284,
+  "auc_disjunta": 0.7562022910806107,
+  "it_disjunta": 110,
+  "segundos": 523.6561541557312,
+  "xgb_diseno": 0.7795273533242792,
+  "xgb_disjunta": 0.7745280205966131,
+  "pasa_compuerta": false
+}
