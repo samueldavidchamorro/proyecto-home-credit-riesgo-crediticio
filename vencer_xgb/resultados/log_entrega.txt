@@ -9,3 +9,91 @@ p�gina: docs/index.html (13.0 MB)
 origin
 original
 > gh repo view samueldavidchamorro/proyecto-home-credit-riesgo-crediticio
+jecutada**: carga la aplicación Dash, llama a los callbacks de sus tres páginas, muestra las 26 figuras, hace predicciones en vivo con los 6 modelos, explica cada predicción (SHAP), muestra los casos de ELAR-R y valida el servidor y las cifras (62 de 62 chequeos) |
+| `10_reproducibilidad.ipynb` | Entorno, semillas, tabla maestra y bibliografía |
+
+Los capítulos 04 (literatura), 05 (modelo original ELAR-R) y 09 (conclusiones) son texto (`.md`) y están en la raíz. El
+capítulo 08 tiene además su texto de diseño en `08_dashboard.md`.
+
+## Anexo: Entregable 3 (`Entregable3_anexo/`)
+
+| Cuaderno | Contenido |
+|---|---|
+| `01_datos_y_linea_base.ipynb` | Datos, preprocesamiento y línea base (genera `datos/`, que usa el dashboard) |
+| `02_clasificacion.ipynb` | Estudio de clasificación |
+| `03_regresion.ipynb` | Estudio de regresión |
+| `04_optimizacion_hiperparametros.ipynb` | Optimización de hiperparámetros |
+| `05_optimizacion_computacional.ipynb` | Optimización computacional |
+| `06_evaluacion_clasificacion.ipynb` | Evaluación de clasificación |
+| `07_evaluacion_regresion.ipynb` | Evaluación de regresión |
+| `08_interpretabilidad.ipynb` | Interpretabilidad (SHAP) |
+| `09_comparacion_estadistica.ipynb` | Comparación estadística |
+| `A1_ejecucion_del_estudio.ipynb` | Ejecución del estudio completo |
+
+## Volver a ejecutarlos
+
+Los cuadernos usan rutas relativas a la raíz del repositorio (`src/`, `datos/`, `resultados/`, ...). Para ejecutarlos de nuevo,
+ábralos desde la raíz, no desde esta carpeta. `08_dashboard.ipynb` es la excepción: busca la raíz por su cuenta y corre desde
+aquí, con las dependencias de `requirements_dashboard.txt` (Python 3.12) más `ipykernel` y `kaleido==0.1.0.post1` (exporta
+las figuras a PNG).
+
+## Relación con el dashboard
+
+- Dashboard: https://dashriesgocrediticio.onrender.com
+- Código del dashboard: `app.py`, `pages/` y `src/servicio.py` en la raíz.
+- Arquitectura y fuentes de cada cifra: `08_dashboard.md`, sección 8.2.
+> git remote
+origin
+original
+> git add -A
+warning: in the working copy of 'vencer_xgb/ajuste_general.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vencer_xgb/humo.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vencer_xgb/supervisor2.py', LF will be replaced by CRLF the next time Git touches it
+> git diff --cached --quiet
+
+> git commit -m Proyecto completo: cuaderno �nico, intento de superar a XGBoost y p�gina de GitHub Pages
+ega.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_des.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_focal.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_ktboost.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_lce.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_lmt.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_ngboost.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_oblicuos.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_psplines.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_rankboost.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_rgf.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_rotaciones.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_spe.txt
+ create mode 100644 vencer_xgb/resultados/log_protocolo_trboost.txt
+ create mode 100644 vencer_xgb/resultados/pred_bstacking.npz
+ create mode 100644 vencer_xgb/resultados/pred_des.npz
+ create mode 100644 vencer_xgb/resultados/pred_focal.npz
+ create mode 100644 vencer_xgb/resultados/pred_ktboost.npz
+ create mode 100644 vencer_xgb/resultados/pred_lce.npz
+ create mode 100644 vencer_xgb/resultados/pred_lmt.npz
+ create mode 100644 vencer_xgb/resultados/pred_ngboost.npz
+ create mode 100644 vencer_xgb/resultados/pred_oblicuos.npz
+ create mode 100644 vencer_xgb/resultados/pred_psplines.npz
+ create mode 100644 vencer_xgb/resultados/pred_rankboost.npz
+ create mode 100644 vencer_xgb/resultados/pred_rgf.npz
+ create mode 100644 vencer_xgb/resultados/pred_rotaciones.npz
+ create mode 100644 vencer_xgb/resultados/pred_sl3.npz
+ create mode 100644 vencer_xgb/resultados/pred_spe.npz
+ create mode 100644 vencer_xgb/resultados/pred_trboost.npz
+ create mode 100644 vencer_xgb/resultados/pruebas_sl_sl2_sl3_bstacking.json
+ create mode 100644 vencer_xgb/resultados/superlearner_bstacking.json
+ create mode 100644 vencer_xgb/resultados/superlearner_sl3.json
+ create mode 100644 vencer_xgb/supervisor2.py
+> git branch -M main
+
+> git push -u origin main
+branch 'main' set up to track 'origin/main'.
+To https://github.com/samueldavidchamorro/proyecto-home-credit-riesgo-crediticio.git
+   bff0db5..194398b  main -> main
+> gh api -X POST repos/samueldavidchamorro/proyecto-home-credit-riesgo-crediticio/pages -f source[branch]=main -f source[path]=/docs
+{"message":"GitHub Pages is already enabled.","documentation_url":"https://docs.github.com/rest/pages/pages#create-a-apiname-pages-site","status":"409"}gh: GitHub Pages is already enabled. (HTTP 409)
+> gh api -X PUT repos/samueldavidchamorro/proyecto-home-credit-riesgo-crediticio/pages -f source[branch]=main -f source[path]=/docs
+
+zip: C:\Users\samit\Downloads\ENTREGA_HOME_CREDIT.zip 2.06 GB
+listo: https://samueldavidchamorro.github.io/proyecto-home-credit-riesgo-crediticio/

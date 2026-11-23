@@ -141,3 +141,9 @@ Reglas:
   se desbordaba a memoria compartida del sistema (7,6 GB por PCIe) y una evaluación llegó a tardar 4,7 h. Se añadió
   un tope al pool de memoria de CuPy y la búsqueda de cortes por trozos de nodos (`gbdt.py`); ninguno de los dos
   cambia el modelo, el espacio de búsqueda ni la semilla. La compuerta se repite completa desde cero.
+- 2026-11-22/23: DES (#24) se quedó sin memoria con ese tope (compuerta y protocolo completo). Se redujo el bloque de
+  consultas de la búsqueda de vecinos (4096 → 256 filas) y se libera la caché del pool antes; el cálculo es el mismo.
+  Los intentos fallidos no produjeron resultados; cuentan solo los intentos completos.
+- Nota (no es desviación): en RGF (#10) la compuerta paró en la ronda 190, justo antes de su primer paso totalmente
+  correctivo (cada 191); en el protocolo completo (228 rondas) ese paso sí ocurre y la AUC baja (OOF 0.739). Se
+  reporta tal cual, según la regla de rondas × 1.2 fijada de antemano.
